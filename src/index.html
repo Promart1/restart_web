@@ -5,11 +5,41 @@
 })
 <body>
   @@include('html/header.html',{})
-    <main class="main">
-    
+    <main>
+    <section class="main">
+      <div class="container main__container">
+      <img src="@img/main-bg.png" alt="bg" class="main__bg">
+        <div class="main__wrapper">
+          <div class="main__block">
+            <div class="main__content">
+              <img src="@img/icons/analysis.svg" alt="analysis" class="main__img" width="42" height="42"/>
+              <p class="main__text">Діагностика та ремонт стартерів, генераторів, кондиціонерів</p>
+            </div>
+            <div class="main__btn-wrapper">
+              <button class="main__btn">Мережа сервісів</button>
+            </div>
+          </div>
+
+          <div class="main__nav-wrapper">
+            <img src="@img/icons/arr-right.svg" alt="array" class="main__icon" />
+            <img src="@img/icons/line.svg" alt="array" class="main__icon" />
+            <img src="@img/icons/arr-left.svg" alt="array" class="main__icon" />
+          </div>
+
+          <div class="main__block">
+            <div class="main__content">
+              <img src="@img/icons/sale.svg" alt="sale" class="main__img"  width="42" height="42"/>
+              <p class="main__text-s">Продаж стартерів, генераторів та компонентів</p>
+            </div>
+            <div class="main__btn-wrapper">
+              <button class="main__btn">Перейти в магазин</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
   @@include('html/footer.html',{})
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 </html>
