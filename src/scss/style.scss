@@ -109,7 +109,7 @@ body {
     transition: color 0.3s ease;
 
     &:hover {
-      color: $special-color;
+      color: $secondary-text-color;
     }
   }
 
@@ -489,3 +489,134 @@ body {
         }
     }
 }
+
+.nav {
+  &__inner {
+    margin-top: 74px;
+    text-align: center;
+
+    @include respond-to($tablet) {
+      margin-top: 55px;
+    }
+  }
+
+  &__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    margin-top: 28px;
+    font-size: 20px;
+
+    @include respond-to($tablet) {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+  }
+
+  &__blocks-wrapper {
+    margin-top: 29px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+
+    @include respond-to($tablet) {
+      margin-top: 25px;
+      gap: 26px 28px;
+    }
+
+        @include respond-to($mobile) {
+          gap: 24px;
+        }
+  }
+
+  &__block {
+    max-width: 442px;
+    max-height: 386px;
+    box-shadow: 0px 4px 4px 0px #0000000D;
+    background: $secondary-bg-color;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+        @include respond-to($tablet) {
+          max-width: 326px;
+          max-height: 282px;
+        }
+  }
+
+  &__block-title {
+    margin-top: 28px;
+    font-size: 20px;
+    padding-right: 20px;
+      padding-left: 20px;
+
+      @include respond-to($tablet) {
+        margin-top: 11px;
+      }
+  }
+
+  &__block-title::after {
+    content: "";
+    display: block;
+    border-top: 1px solid $line-color;
+    margin-top: 17px;
+    max-width: 355px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to($tablet) {
+      margin-top: 9px;
+    }
+  }
+
+  &__block-text {
+    margin-top: 30px;
+    max-width: 211px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $secondary-text-color;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 41px;
+
+    @include respond-to($tablet) {
+      margin-top: 23px;
+      margin-bottom: 29px;
+    }
+
+        @include respond-to($mobile) {
+          margin-top: 18px;
+          margin-bottom: 14px;
+        }
+  }
+
+  &__text {
+    margin-top: 48px;
+    margin-bottom: 105px;
+    max-width: 811px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to($tablet) {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+         @include respond-to($mobile) {
+           margin-top: 30px;
+         }
+  }
+}
+

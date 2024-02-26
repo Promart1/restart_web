@@ -23,6 +23,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    font-size: inherit;
 }
 
 button {
@@ -49,9 +50,3 @@ img {
     height: auto;
 }
 
-.container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
