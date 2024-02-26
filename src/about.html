@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"About us" })
+  <body>
+    @@include('html/header.html',{})
+    <main>
+      <!--------------- about_section ---------------------------->
+      <section class="about">
+        <div class="container about__container">
+          <div class="about__inner">
+           
+            <div class="about__slogan-block">
+              <p class="about__slogan-text">Наша місія — надавати професійні рішення для звичного ритму життя людей, які цінують автокомфорт та прагнуть жити на повну.</p>
+            </div>
+
+            <div class="about__content">
+              <p class="about__content-text">Компанія Restart працює на ринку стартерів та генераторів понад 20 років. <br>Паралельно з гуртовими продажами агрегатів та компонентів на всій території України, компанія розвиває мережу сервісно-технічних центрів у Рівному та Луцьку.</p>
+            <img src="@img/about__img-cars.png" alt="cars" class="about__content-img">
+            <h3 class="about__content-title">Сьогодні в Компанії є 7 діючих сервісно-технічних центрів, що надають такі послуги:</h3>
+            <ul class="about__list">
+
+              <li class="about__item">
+                <p>діагностика, профілактика та ремонт стартерів та генераторів;</p>
+              </li>
+
+               <li class="about__item">
+                <p>заміна компонентів агрегатів;</p>
+              </li>
+
+               <li class="about__item">
+                <p>діагностика системи кондиціонування азотом;</p>
+              </li>
+
+               <li class="about__item">
+                <p>заправка та дозаправка кондиціонера фреоном;</p>
+              </li>
+              
+               <li class="about__item">
+                <p>ремонт системи кондиціонування;</p>
+              </li>
+            </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

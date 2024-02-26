@@ -443,51 +443,51 @@ body {
     }
 
     &__nav-wrapper {
-     display: none;
+      display: none;
     }
   }
 
-    @include respond-to($m-tablet) {
-      &__container {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-      
-        &__wrapper {
-          display: block;
-          margin-top: 21px;
-        }
-      
-        &__block {
-          width: 290px;
-          height: 197px;
-          margin-bottom: 10px;
-          margin-right: auto;
-          margin-left: auto;
-        }
-      
-        &__content {
-          margin-top: 0;
-         padding-top: 35px;
-        }
-      
-        &__text {
-          max-width: 172px;
-        }
-      
-        &__text-s {
-          max-width: 138px;
-        }
-      
-        &__btn-wrapper {
-          margin-top: 12px;
-        }
-      
-        &__btn {
-          padding: 16px 0;
-          width: 200px;
-        }
+  @include respond-to($m-tablet) {
+    &__container {
+      padding-left: 15px;
+      padding-right: 15px;
     }
+
+    &__wrapper {
+      display: block;
+      margin-top: 21px;
+    }
+
+    &__block {
+      width: 290px;
+      height: 197px;
+      margin-bottom: 10px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__content {
+      margin-top: 0;
+      padding-top: 35px;
+    }
+
+    &__text {
+      max-width: 172px;
+    }
+
+    &__text-s {
+      max-width: 138px;
+    }
+
+    &__btn-wrapper {
+      margin-top: 12px;
+    }
+
+    &__btn {
+      padding: 16px 0;
+      width: 200px;
+    }
+  }
 }
 
 .nav {
@@ -513,7 +513,6 @@ body {
       font-size: 16px;
       margin-top: 10px;
     }
-
   }
 
   &__blocks-wrapper {
@@ -529,40 +528,40 @@ body {
       gap: 26px 28px;
     }
 
-        @include respond-to($mobile) {
-          gap: 24px;
-        }
+    @include respond-to($mobile) {
+      gap: 24px;
+    }
   }
 
   &__block {
     max-width: 442px;
     max-height: 386px;
-    box-shadow: 0px 4px 4px 0px #0000000D;
+    box-shadow: 0px 4px 4px 0px #0000000d;
     background: $secondary-bg-color;
     border-radius: 5px;
     margin-right: auto;
     margin-left: auto;
-    
+
     img {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
     }
 
-        @include respond-to($tablet) {
-          max-width: 326px;
-          max-height: 282px;
-        }
+    @include respond-to($tablet) {
+      max-width: 326px;
+      max-height: 282px;
+    }
   }
 
   &__block-title {
     margin-top: 28px;
     font-size: 20px;
     padding-right: 20px;
-      padding-left: 20px;
+    padding-left: 20px;
 
-      @include respond-to($tablet) {
-        margin-top: 11px;
-      }
+    @include respond-to($tablet) {
+      margin-top: 11px;
+    }
   }
 
   &__block-title::after {
@@ -594,10 +593,10 @@ body {
       margin-bottom: 29px;
     }
 
-        @include respond-to($mobile) {
-          margin-top: 18px;
-          margin-bottom: 14px;
-        }
+    @include respond-to($mobile) {
+      margin-top: 18px;
+      margin-bottom: 14px;
+    }
   }
 
   &__text {
@@ -614,9 +613,161 @@ body {
       margin-bottom: 30px;
     }
 
-         @include respond-to($mobile) {
-           margin-top: 30px;
-         }
+    @include respond-to($mobile) {
+      margin-top: 30px;
+    }
   }
 }
 
+//////////////////////////ABOUT_PAGE///////////////////////////////////
+
+.about {
+  background: $secondary-bg-color;
+  margin-top: -40px;
+  padding-top: 75px;
+  padding-bottom: 56px;
+
+  &__slogan-block {
+    padding-top: 26px;
+    padding-bottom: 22px;
+    background: $main-bg-color;
+
+    @include respond-to($desktop) {
+      padding-top: 28px;
+      padding-bottom: 24px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+
+        @include respond-to($mobile) {
+          padding-top: 17px;
+          padding-bottom: 24px;
+        }
+  }
+
+  &__slogan-text {
+    font-size: 20px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to($desktop) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include respond-to($mobile) {
+      max-width: 240px;
+    }
+  }
+
+  &__content-text {
+    margin-top: 37px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(119, 119, 119, 1);
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to($LapTop) {
+      br {
+        display: none;
+      }
+
+      line-height: 22px;
+    }
+
+    @include respond-to($mobile) {
+      margin-top: 30px;
+      max-width: 264px;
+    }
+  }
+
+  &__content-img {
+    margin-top: 23px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to($desktop) {
+      margin-top: 30px;
+    }
+  }
+
+  &__content-title {
+    margin-top: 36px;
+    font-size: 20px;
+    margin-left: 38px;
+
+    @include respond-to($LapTop) {
+      margin-left: 0;
+      font-size: 16px;
+    }
+
+    @include respond-to($mobile) {
+      margin-top: 20px;
+      margin-left: 10px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    margin-top: 17px;
+    margin-left: 50px;
+    list-style: disc;
+
+    @include respond-to($LapTop) {
+      margin-left: 0;
+      margin-top: 13px;
+    }
+
+        @include respond-to($mobile) {
+          margin-top: 20px;
+          max-width: 264px;
+        }
+  }
+
+  &__item {
+    color: rgba(119, 119, 119, 1);
+    line-height: 28px;
+    margin-left: 5px;
+
+    @include respond-to($LapTop) {
+      margin-left: 15px;
+    }
+
+    @include respond-to($mobile) {
+      margin-left: 15px;
+      max-width: 264px;
+    }
+  }
+
+    &__item::marker {
+      font-size:x-small;
+      margin-right: -10px;
+    }
+
+  @include respond-to($desktop) {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+    @include respond-to($m-tablet) {
+      margin-top: 14px;
+    }
+
+  @include respond-to($mobile) {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  &__container {
+    @include respond-to($mobile) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
