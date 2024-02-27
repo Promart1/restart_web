@@ -555,9 +555,9 @@ body {
       padding-bottom: 29px;
     }
 
-        @include respond-to($mobile) {
-padding-bottom: 26px;
-        }
+    @include respond-to($mobile) {
+      padding-bottom: 26px;
+    }
   }
 
   &__block-title {
@@ -646,10 +646,10 @@ padding-bottom: 26px;
       padding-left: 5px;
     }
 
-        @include respond-to($mobile) {
-          padding-top: 17px;
-          padding-bottom: 24px;
-        }
+    @include respond-to($mobile) {
+      padding-top: 17px;
+      padding-bottom: 24px;
+    }
   }
 
   &__slogan-text {
@@ -728,10 +728,10 @@ padding-bottom: 26px;
       margin-top: 13px;
     }
 
-        @include respond-to($mobile) {
-          margin-top: 20px;
-          max-width: 264px;
-        }
+    @include respond-to($mobile) {
+      margin-top: 20px;
+      max-width: 264px;
+    }
   }
 
   &__item {
@@ -749,10 +749,10 @@ padding-bottom: 26px;
     }
   }
 
-    &__item::marker {
-      font-size:x-small;
-      margin-right: -10px;
-    }
+  &__item::marker {
+    font-size: x-small;
+    margin-right: -10px;
+  }
 
   @include respond-to($desktop) {
     margin-top: 0;
@@ -760,15 +760,14 @@ padding-bottom: 26px;
     padding-bottom: 30px;
   }
 
-    @include respond-to($m-tablet) {
-      margin-top: 14px;
-    }
+  @include respond-to($m-tablet) {
+    margin-top: 14px;
+  }
 
   @include respond-to($mobile) {
     width: 290px;
     margin-right: auto;
     margin-left: auto;
-    
   }
 
   &__container {
@@ -780,12 +779,22 @@ padding-bottom: 26px;
 }
 
 .video {
-
   &__inner {
     margin-top: 44px;
     background: black;
     height: 220px;
     padding-top: 60px;
+
+    @include respond-to($desktop) {
+      height: 277px;
+      padding-top: 112px;
+    }
+
+    @include respond-to($mobile) {
+      margin-top: 20px;
+      height: 220px;
+      padding-top: 60px;
+    }
   }
 
   &__circle {
@@ -796,34 +805,51 @@ padding-bottom: 26px;
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    
+
+    @include respond-to($desktop) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include respond-to($mobile) {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &__trian {
     position: absolute;
     top: 50%;
-      left: 55%;
-      transform: translate(-50%, -50%);
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+    @include respond-to($desktop) {
+      width: 15px;
+      height: 15px;
+    }
+
+    @include respond-to($mobile) {
+      width: 37px;
+      height: 37px;
+    }
   }
 
   &__container {
     max-width: 100%;
 
     @include respond-to($desktop) {
-        padding-left: 30px;
-        padding-right: 30px;
-      }
-    
-      @include respond-to($mobile) {
-        padding-right: 0;
-        padding-left: 0;
-      }
-  }
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
+    @include respond-to($mobile) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
 
 .advantages {
-
   &__inner {
     margin-top: 45px;
     padding-top: 55px;
@@ -853,23 +879,142 @@ padding-bottom: 26px;
 
   &__cont::after {
     content: "";
-      display: block;
-      border-top: 1px solid #e2e2e2;
-      margin-top: 32px;
-      
+    display: block;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 32px;
   }
 
   &__wrapper {
-    margin-top: 35px;
+    margin-top: 40px;
     margin-left: 9px;
     display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    padding-right: 20px;
+  }
+
+  &__block:nth-last-child(1) {
+    padding-right: 0;
   }
 
   &__block-title {
     font-size: 16px;
+    line-height: 24px;
   }
 
   &__list {
     margin-top: 17px;
+  }
+
+  &__item {
+    color: rgba(119, 119, 119, 1);
+    font-size: 16px;
+    line-height: 28px;
+    list-style: disc;
+    max-width: 618px;
+  }
+
+  @include respond-to($desktop) {
+    &__inner {
+      margin-top: 26px;
+      padding-top: 35px;
+      padding-bottom: 31px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    &__cont {
+      margin-left: 0;
+    }
+
+    &__text {
+      margin-top: 21px;
+    }
+
+    &__cont::after {
+      margin-top: 18px;
+    }
+
+    &__wrapper {
+      margin-top: 25px;
+      margin-left: 0;
+    }
+
+    &__block {
+      margin-right: 20px;
+      padding-right: 0;
+    }
+
+    &__block:nth-last-child(1) {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+
+    &__block-title {
+      font-size: 16px;
+    }
+
+    &__list {
+      margin-top: 7px;
+    }
+
+    &__item {
+      margin-left: 10px;
+    }
+  }
+
+  @include respond-to($s-tablet) {
+    &__inner {
+      margin-top: 30px;
+      padding-bottom: 24px;
+      padding-left: 13px;
+      padding-right: 13px;
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 16px;
+      max-width: 825px;
+    }
+
+    &__cont::after {
+      margin-top: 31px;
+    }
+
+    &__wrapper {
+      margin-top: 30px;
+      display: block;
+    }
+
+    &__block {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    &__block:nth-last-child(1) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    &__list {
+      margin-top: 4px;
+    }
+
+    &__item {
+      max-width: 264px;
+      margin-left: 11px;
+    }
+
+    &__item::marker {
+      font-size: x-small;
+    }
   }
 }
