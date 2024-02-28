@@ -39,6 +39,10 @@ body {
 
   &__logo-wrapper {
     display: flex;
+
+    img {
+      min-width: 184px;
+    }
   }
 
   img {
@@ -523,6 +527,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     align-self: center;
     gap: 17px;
+
 
     @include respond-to($tablet) {
       margin-top: 25px;
@@ -1235,14 +1240,19 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
     align-self: center;
-    gap: 10px;
+    gap: 60px 10px;
     margin-top: 35px;
+
+   
   }
+
+
 
   &__block {
     border: 1px solid rgba(230, 230, 230, 1);
     background: $secondary-bg-color;
     max-width: 332px;
+    max-height: 369px;
     border-radius: 5px;
     padding-bottom: 29px;
     margin-right: auto;
@@ -1254,5 +1264,139 @@ body {
     margin-top: 28px;
     font-size: 20px;
     line-height: 26px;
+    position: relative;
   }
+
+  &__block-title::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 17px;
+    max-width: 268px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  &__block-text {
+    margin-top: 25px;
+    max-width: 260px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__text {
+    max-width: 295px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  a {
+    color: rgba(51, 122, 183, 1);
+  }
+
+    a:hover {
+      color: rgb(0, 54, 101);
+    }
+
+         &__block-text-s {
+           max-width: 140px;
+         }
+
+  @include respond-to($desktop) {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 23px;
+
+img {
+  width: 100%;
+}
+
+    &__title {
+      display: none;
+    }
+
+    &__list {
+      margin-top: 0;
+    }
+
+    &__block {
+      max-width: 339px;
+      height: 351px;
+      padding-bottom: 27px;
+    }
+
+    &__block-title {
+      margin-top: 15px;
+    }
+
+    &__block-title::after {
+      margin-top: 11px;
+    }
+
+    &__block-text {
+      margin-top: 23px;
+      max-width: 309px;
+    }
+
+    &__text {
+      max-width: 295px;
+      margin-top: 12px;
+    }
+
+             &__block-text-s {
+              margin-top: 40px;
+             }
+  }
+
+    @include respond-to($mobile) {
+  
+      padding-top: 30px;
+      padding-bottom: 28px;
+      margin-top: 15px;
+  
+      &__block {
+        max-width: 290px;
+        height: 300px;
+        padding-bottom: 23px;
+      }
+  
+      &__block-title {
+        margin-top: 9px;
+      }
+  
+      &__block-title::after {
+        margin-top: 9px;
+      }
+  
+      &__block-text {
+        margin-top: 20px;
+        max-width: 264px;
+      }
+  
+      &__text {
+        max-width: 290px;
+        margin-top: 10px;
+      }
+  
+      &__block-text-s {
+        margin-top: 20px;
+        max-width: 140px;
+      }
+
+             &__list {
+              
+               grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+              gap: 25px;
+      
+      
+             }
+    }
 }
