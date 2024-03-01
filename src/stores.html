@@ -323,26 +323,28 @@
         <div class="container">
           <div class="form__inner">
             <img src="@img/form-img.png" alt="car" />
+            <div class="form__block-wrapper">
             <p class="form__text">Заповніть форму для консультації або запису на діагностику/ремонт</p>
 
             <div class="form__block">
-              <p class="form__block-title"></p>
+              <p class="form__block-title">Введіть, будь ласка, ваші контактні дані</p>
               <form action="/submit" method="post">
-                <label for="name">Ваше ім’я *</label>
-                <input type="text" id="name" name="name" placeholder="Введіть ваше ім’я" required />
+                <label for="name" class="form__label">Ваше ім’я <span>*</span></label>
+                <input type="text" class="form__input" id="name" name="name" placeholder="Введіть ваше ім’я" required />
 
-                <label for="phone">Телефон *</label>
-                <input type="tel" id="phone" name="phone" placeholder="Ваш контактний номер телефону" required />
+                <label for="phone" class="form__label">Телефон <span>*</span></label>
+                <input type="tel" class="form__input" id="phone" name="phone" placeholder="Ваш контактний номер телефону" required />
 
-                <label for="city">Місто *</label>
-                <select id="city" name="city" required>
+                <label for="city" class="form__label">Місто <span>*</span></label>
+                <select id="city" class="form__input" name="city" required>
                   <option value="" disabled selected>Оберіть місто зі списку</option>
                   <option value="kyiv">Рівне</option>
                   <option value="lviv">Луцьк</option>
                 </select>
 
-                <button type="submit">Замовити телефонний дзвінок</button>
+                <button type="submit" class="form__btn">Замовити телефонний дзвінок</button>
               </form>
+            </div>
             </div>
           </div>
         </div>
