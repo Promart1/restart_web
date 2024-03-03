@@ -61,6 +61,7 @@ body {
     &__text {
       margin-top: 50px;
       white-space: nowrap;
+      margin-left: 23%;
     }
 
     &__inner {
@@ -407,9 +408,11 @@ body {
     &__wrapper {
       position: static;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 29px;
+      // justify-content: space-evenly;
       align-items: center;
-      margin-top: 15px;
+      margin-top: 14px;
     }
 
     &__block {
@@ -424,7 +427,7 @@ body {
 
     &__text {
       line-height: 22px;
-      margin-left: 8px;
+      margin-left: 11px;
       max-width: 195px;
     }
 
@@ -436,6 +439,7 @@ body {
 
     &__img {
       height: 42px;
+      width: 42px;
       margin-top: 5px;
     }
 
@@ -519,6 +523,14 @@ body {
       font-size: 16px;
       margin-top: 10px;
     }
+
+        @include respond-to($mobile) {
+          max-width: 250px;
+          margin-top: 15px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
   }
 
   &__blocks-wrapper {
@@ -530,11 +542,17 @@ body {
 
     @include respond-to($tablet) {
       margin-top: 25px;
-      gap: 26px 28px;
+      gap: 26px 29px;
+      margin-right: 13px;
+      margin-left: 13px;
+
+
     }
 
     @include respond-to($mobile) {
       gap: 24px;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
@@ -557,10 +575,16 @@ body {
       max-width: 326px;
       max-height: 282px;
       padding-bottom: 29px;
+      // margin-right: 0;
+
+      &:nth-last-child(2) {
+        margin-left: 0;
+      }
     }
 
     @include respond-to($mobile) {
-      padding-bottom: 26px;
+      // padding-bottom: 26px;
+      max-height: 250px;
     }
   }
 
@@ -584,8 +608,8 @@ body {
     margin-right: auto;
     margin-left: auto;
 
-    @include respond-to($tablet) {
-      margin-top: 9px;
+    @include respond-to($mobile) {
+      margin-top: 10px;
     }
   }
 
@@ -600,12 +624,12 @@ body {
     margin-bottom: 41px;
 
     @include respond-to($tablet) {
-      margin-top: 23px;
-      margin-bottom: 29px;
+      margin-top: 13px;
+      // margin-bottom: 29px;
     }
 
     @include respond-to($mobile) {
-      margin-top: 18px;
+      margin-top: 13px;
       margin-bottom: 14px;
     }
   }
@@ -620,8 +644,9 @@ body {
     margin-left: auto;
 
     @include respond-to($tablet) {
-      margin-top: 25px;
+      margin-top: 24px;
       margin-bottom: 30px;
+      max-width: 680px;
     }
 
     @include respond-to($mobile) {
@@ -769,9 +794,9 @@ body {
   }
 
   @include respond-to($mobile) {
-    width: 290px;
-    margin-right: auto;
-    margin-left: auto;
+    
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   &__container {
@@ -785,73 +810,108 @@ body {
 .video {
   &__inner {
     margin-top: 44px;
-    background: black;
-    height: 220px;
-    padding-top: 60px;
-
-    @include respond-to($desktop) {
-      height: 277px;
-      padding-top: 112px;
-    }
-
-    @include respond-to($mobile) {
-      margin-top: 20px;
-      height: 220px;
-      padding-top: 60px;
-    }
+    background: $special-color;
+    // background: rgba(102, 102, 102, 0.5);
+    // height: 190px;
+    height: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+       
   }
 
-  &__circle {
-    width: 100px;
-    height: 100px;
-    border: 1px solid $secondary-bg-color;
-    border-radius: 50px;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
+  
+    &__special-word {
+    text-transform: uppercase;
+      background-image: linear-gradient(-225deg,
+          #383838 0%,
+          #404040 29%,
+          #7e7e7e 67%,
+          #eaeaea 100%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      // text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 4vw;
+      font-family: "Black Ops One", system-ui;
+       font-weight: 400;
+       letter-spacing: 2px;
+       text-align: center;
+      margin-right: auto;
+      margin-left: auto;
 
-    @include respond-to($desktop) {
-      width: 40px;
-      height: 40px;
+
+
+                        @include respond-to($m-mobile) {
+                          font-size: 6vw;
+                        }
+
     }
 
-    @include respond-to($mobile) {
-      width: 100px;
-      height: 100px;
-    }
-  }
+          @keyframes textclip {
+              to {
+                background-position: 200% center;
+              }
+            }
 
-  &__trian {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
 
-    @include respond-to($desktop) {
-      width: 15px;
-      height: 15px;
-    }
+  // &__circle {
+  //   width: 100px;
+  //   height: 100px;
+  //   border: 1px solid $secondary-bg-color;
+  //   border-radius: 50px;
+  //   position: relative;
+  //   margin-right: auto;
+  //   margin-left: auto;
 
-    @include respond-to($mobile) {
-      width: 37px;
-      height: 37px;
-    }
-  }
+  //   @include respond-to($desktop) {
+  //     width: 40px;
+  //     height: 40px;
+  //   }
 
-  &__container {
-    max-width: 100%;
+  //   @include respond-to($mobile) {
+  //     width: 100px;
+  //     height: 100px;
+  //   }
+  // }
 
-    @include respond-to($desktop) {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+  // &__trian {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 55%;
+  //   transform: translate(-50%, -50%);
 
-    @include respond-to($mobile) {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-}
+  //   @include respond-to($desktop) {
+  //     width: 15px;
+  //     height: 15px;
+  //   }
+
+  //   @include respond-to($mobile) {
+  //     width: 37px;
+  //     height: 37px;
+  //   }
+  // }
+
+//   &__container {
+//     max-width: 100%;
+
+//     @include respond-to($desktop) {
+//       padding-left: 30px;
+//       padding-right: 30px;
+//     }
+
+//     @include respond-to($mobile) {
+//       padding-right: 0;
+//       padding-left: 0;
+//     }
+//   }
+ }
 
 .advantages {
   &__inner {
@@ -1320,16 +1380,18 @@ body {
 
     &__list {
       margin-top: 0;
+      gap: 58px 30px;
     }
 
     &__block {
       max-width: 339px;
       height: 351px;
       padding-bottom: 27px;
+     
     }
 
     &__block-title {
-      margin-top: 15px;
+      margin-top: 13px;
     }
 
     &__block-title::after {
@@ -1337,19 +1399,33 @@ body {
     }
 
     &__block-text {
-      margin-top: 23px;
+      margin-top: 25px;
       max-width: 309px;
     }
 
     &__text {
       max-width: 295px;
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
     &__block-text-s {
       margin-top: 40px;
     }
   }
+
+    @include respond-to($tablet) {
+      &__block {
+          margin-right: 0;
+          margin-left: 0;
+        }
+    }
+
+         @include respond-to($l-tablet) {
+           &__block {
+              margin-right: auto;
+                margin-left: auto;
+           }
+         }
 
   @include respond-to($mobile) {
     padding-top: 30px;
@@ -1360,6 +1436,7 @@ body {
       max-width: 290px;
       height: 300px;
       padding-bottom: 23px;
+     
     }
 
     &__block-title {
@@ -1507,6 +1584,10 @@ body {
   }
 
   @include respond-to($LapTop) {
+    
+    &__inner {
+        margin-top: 90px;
+      }
     &__block {
       display: block;
       margin-top: 30px;
@@ -1514,7 +1595,7 @@ body {
 
     &__block-wrapper {
       width: 100%;
-      margin-bottom: 53px;
+      margin-bottom: 56px;
     }
 
     &__btn {
@@ -1604,18 +1685,34 @@ body {
   &__block {
     position: relative;
     max-width: 426px;
+    height: 272px;
     border-radius: 5px;
     border: 1px solid rgba(230, 230, 230, 1);
     background: $secondary-bg-color;
-    padding: 30px 103px;
+   
   }
 
-  &__play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+     iframe,
+     object,
+     embed {
+      /* margin-top: 81px; */
+      /* width: 1160px;
+      height: 491px; */
+  
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+  // &__play {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
 
   @include respond-to($desktop) {
     &__inner {
@@ -1644,7 +1741,7 @@ body {
       height: 217px;
       margin-right: auto;
       margin-left: auto;
-      padding: 21px 84px;
+      
     }
   }
 
@@ -1677,7 +1774,7 @@ body {
     &__block {
       max-width: 290px;
       height: 185px;
-      padding: 19px 72px 15px 72px;
+      
     }
   }
 }
@@ -1691,7 +1788,7 @@ body {
     img {
       width: 100%;
       object-fit: cover;
-      height: 550px;
+      height: 540px;
       object-position: center;
       display: block;
       border-radius: 5px;
@@ -1787,6 +1884,8 @@ body {
 
     &__inner {
       margin-top: 40px;
+
+     
     }
 
     &__block-wrapper {
@@ -1813,8 +1912,8 @@ body {
     &__block {
       width: 264px;
       padding-top: 13px;
-      padding-bottom: 18px;
-      padding-left: 18px;
+      padding-bottom: 13px;
+      padding-left: 13px;
       padding-right: 18px;
       margin-right: auto;
       margin-left: auto;
