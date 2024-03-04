@@ -524,13 +524,12 @@ body {
       margin-top: 10px;
     }
 
-        @include respond-to($mobile) {
-          max-width: 250px;
-          margin-top: 15px;
-          margin-right: auto;
-          margin-left: auto;
-        }
-
+    @include respond-to($mobile) {
+      max-width: 250px;
+      margin-top: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 
   &__blocks-wrapper {
@@ -545,8 +544,6 @@ body {
       gap: 26px 29px;
       margin-right: 13px;
       margin-left: 13px;
-
-
     }
 
     @include respond-to($mobile) {
@@ -794,7 +791,6 @@ body {
   }
 
   @include respond-to($mobile) {
-    
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -817,49 +813,45 @@ body {
     padding-right: 5px;
     padding-left: 5px;
     text-align: center;
-       
   }
 
-  
-    &__special-word {
+  &__special-word {
     text-transform: uppercase;
-      background-image: linear-gradient(-225deg,
-          #383838 0%,
-          #404040 29%,
-          #7e7e7e 67%,
-          #eaeaea 100%);
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      color: #fff;
-      background-clip: text;
-      // text-fill-color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 2s linear infinite;
-      display: inline-block;
-      font-size: 4vw;
-      font-family: "Black Ops One", system-ui;
-       font-weight: 400;
-       letter-spacing: 2px;
-       text-align: center;
-      margin-right: auto;
-      margin-left: auto;
+    background-image: linear-gradient(
+      -225deg,
+      #383838 0%,
+      #404040 29%,
+      #7e7e7e 67%,
+      #eaeaea 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    // text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 4vw;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 
-
-
-                        @include respond-to($m-mobile) {
-                          font-size: 6vw;
-                        }
-
+    @include respond-to($m-mobile) {
+      font-size: 6vw;
     }
+  }
 
-          @keyframes textclip {
-              to {
-                background-position: 200% center;
-              }
-            }
-
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
   // &__circle {
   //   width: 100px;
@@ -898,20 +890,20 @@ body {
   //   }
   // }
 
-//   &__container {
-//     max-width: 100%;
+  //   &__container {
+  //     max-width: 100%;
 
-//     @include respond-to($desktop) {
-//       padding-left: 30px;
-//       padding-right: 30px;
-//     }
+  //     @include respond-to($desktop) {
+  //       padding-left: 30px;
+  //       padding-right: 30px;
+  //     }
 
-//     @include respond-to($mobile) {
-//       padding-right: 0;
-//       padding-left: 0;
-//     }
-//   }
- }
+  //     @include respond-to($mobile) {
+  //       padding-right: 0;
+  //       padding-left: 0;
+  //     }
+  //   }
+}
 
 .advantages {
   &__inner {
@@ -1387,7 +1379,6 @@ body {
       max-width: 339px;
       height: 351px;
       padding-bottom: 27px;
-     
     }
 
     &__block-title {
@@ -1413,19 +1404,19 @@ body {
     }
   }
 
-    @include respond-to($tablet) {
-      &__block {
-          margin-right: 0;
-          margin-left: 0;
-        }
+  @include respond-to($tablet) {
+    &__block {
+      margin-right: 0;
+      margin-left: 0;
     }
+  }
 
-         @include respond-to($l-tablet) {
-           &__block {
-              margin-right: auto;
-                margin-left: auto;
-           }
-         }
+  @include respond-to($l-tablet) {
+    &__block {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 
   @include respond-to($mobile) {
     padding-top: 30px;
@@ -1436,7 +1427,6 @@ body {
       max-width: 290px;
       height: 300px;
       padding-bottom: 23px;
-     
     }
 
     &__block-title {
@@ -1584,10 +1574,9 @@ body {
   }
 
   @include respond-to($LapTop) {
-    
     &__inner {
-        margin-top: 90px;
-      }
+      margin-top: 90px;
+    }
     &__block {
       display: block;
       margin-top: 30px;
@@ -1683,36 +1672,26 @@ body {
   }
 
   &__block {
+    text-align: center;
     position: relative;
-    max-width: 426px;
-    height: 272px;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 62.25%;
     border-radius: 5px;
     border: 1px solid rgba(230, 230, 230, 1);
     background: $secondary-bg-color;
-   
   }
 
-     iframe,
-     object,
-     embed {
-      /* margin-top: 81px; */
-      /* width: 1160px;
-      height: 491px; */
-  
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-  // &__play {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  // }
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
   @include respond-to($desktop) {
     &__inner {
@@ -1723,6 +1702,7 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 30px;
       text-align: center;
+      justify-content: center;
       margin-top: 28px;
     }
 
@@ -1737,11 +1717,8 @@ body {
     }
 
     &__block {
-      max-width: 339px;
-      height: 217px;
       margin-right: auto;
       margin-left: auto;
-      
     }
   }
 
@@ -1770,12 +1747,6 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 20px;
     }
-
-    &__block {
-      max-width: 290px;
-      height: 185px;
-      
-    }
   }
 }
 
@@ -1797,7 +1768,6 @@ body {
   }
 
   &__block-wrapper {
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1881,11 +1851,8 @@ body {
   }
 
   @include respond-to($l-desktop) {
-
     &__inner {
       margin-top: 40px;
-
-     
     }
 
     &__block-wrapper {
@@ -1906,7 +1873,7 @@ body {
       margin-bottom: 31px;
       text-align: center;
       margin-right: auto;
-        margin-left: auto;
+      margin-left: auto;
     }
 
     &__block {
@@ -1923,10 +1890,9 @@ body {
       font-size: 16px;
       line-height: 18px;
       text-align: center;
-    
+
       margin-inline-end: auto;
       margin-left: auto;
-      
     }
 
     &__block-title::after {
@@ -1939,13 +1905,129 @@ body {
       margin-bottom: 10px;
     }
 
-         &__label {
-          margin-bottom: 4px;
-         }
+    &__label {
+      margin-bottom: 4px;
+    }
 
-                    &__btn {
-                      padding-top: 8px;
-                      padding-bottom: 8px;
-                    }
+    &__btn {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__content {
+    background-color: $secondary-bg-color;
+    max-width: 393px;
+    max-height: 429px;
+    margin: 15% auto;
+    padding: 21px 26px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__close {
+    float: right;
+  }
+
+  &__close:hover {
+    fill: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__tip {
+    margin-top: 8px;
+    margin-left: 35%;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 317px;
+    margin-top: 18px;
+    color: $btn-text-color;
+  }
+
+  &__text {
+    margin-top: 52px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(130, 130, 130, 1);
+    position: relative;
+  }
+
+  &__text::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    max-width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+  }
+
+  @include respond-to($l-mobile) {
+    &__content {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    &__tip {
+      margin-top: 7px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &__text {
+      margin-top: 12px;
+    }
+
+    &__text::after {
+      margin-top: 11px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+
+.assortment {
+
+  &__inner {
+    margin-top: 90px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__wrapper {
+    background: $secondary-bg-color;
+    width: 100%;
+    margin-top: 18px;
+    padding: 38px 40px 44px 40px;
+    border-radius: 5px;
+    
   }
 }

@@ -256,10 +256,10 @@
               <li class="videogit__item" id="pidkovy">
                 <p class="videogit__address">Рівне, Підкови, 17з</p>
                 <div class="videogit__block">
-                 <iframe
-              src="https://www.youtube.com/embed/hJ9_XslE_ew"
-              allowfullscreen
-            ></iframe>
+                  <iframe
+                    src="https://www.youtube.com/embed/hJ9_XslE_ew"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </li>
 
@@ -267,29 +267,29 @@
                 <p class="videogit__address">Рівне, Соборна, 446В</p>
                 <div class="videogit__block">
                   <iframe
-              src="https://www.youtube.com/embed/hJ9_XslE_ew"
-              allowfullscreen
-            ></iframe>
+                    src="https://www.youtube.com/embed/hJ9_XslE_ew"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </li>
 
               <li class="videogit__item" id="kyivska">
                 <p class="videogit__address">Рівне, Київська, 98г</p>
                 <div class="videogit__block">
-                   <iframe
-              src="https://www.youtube.com/embed/hJ9_XslE_ew"
-              allowfullscreen
-            ></iframe>
+                  <iframe
+                    src="https://www.youtube.com/embed/hJ9_XslE_ew"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </li>
 
               <li class="videogit__item">
                 <p class="videogit__address">Луцьк, Гонгадзе, 5</p>
                 <div class="videogit__block">
-                   <iframe
-              src="https://www.youtube.com/embed/hJ9_XslE_ew"
-              allowfullscreen
-            ></iframe>
+                  <iframe
+                    src="https://www.youtube.com/embed/hJ9_XslE_ew"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </li>
 
@@ -297,9 +297,9 @@
                 <p class="videogit__address">Луцьк, с. Рованці, Технічна, 1</p>
                 <div class="videogit__block">
                   <iframe
-              src="https://www.youtube.com/embed/hJ9_XslE_ew"
-              allowfullscreen
-            ></iframe>
+                    src="https://www.youtube.com/embed/hJ9_XslE_ew"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </li>
             </ul>
@@ -314,27 +314,209 @@
           <div class="form__inner">
             <img src="@img/form-img.png" alt="car" />
             <div class="form__block-wrapper">
-            <p class="form__text">Заповніть форму для консультації або запису на діагностику/ремонт</p>
+              <p class="form__text">
+                Заповніть форму для консультації або запису на
+                діагностику/ремонт
+              </p>
 
-            <div class="form__block">
-              <p class="form__block-title">Введіть, будь ласка, ваші контактні дані</p>
-              <form action="/submit" method="post">
-                <label for="name" class="form__label">Ваше ім’я <span>*</span></label>
-                <input type="text" class="form__input" id="name" name="name" placeholder="Введіть ваше ім’я" required />
+              <div class="form__block">
+                <p class="form__block-title">
+                  Введіть, будь ласка, ваші контактні дані
+                </p>
+                <form action="/submit" method="post">
+                  <label for="name" class="form__label"
+                    >Ваше ім’я <span>*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    name="name"
+                    placeholder="Введіть ваше ім’я"
+                    required
+                  />
 
-                <label for="phone" class="form__label">Телефон <span>*</span></label>
-                <input type="tel" class="form__input" id="phone" name="phone" placeholder="Ваш контактний номер телефону" required />
+                  <label for="phone" class="form__label"
+                    >Телефон <span>*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="form__input"
+                    id="phone"
+                    name="phone"
+                    placeholder="Ваш контактний номер телефону"
+                    required
+                  />
 
-                <label for="city" class="form__label">Місто <span>*</span></label>
-                <select id="city" class="form__input" name="city" required>
-                  <option value="" disabled selected>Оберіть місто зі списку</option>
-                  <option value="kyiv">Рівне</option>
-                  <option value="lviv">Луцьк</option>
-                </select>
+                  <label for="city" class="form__label"
+                    >Місто <span>*</span></label
+                  >
+                  <select id="city" class="form__input" name="city" required>
+                    <option value="" disabled selected>
+                      Оберіть місто зі списку
+                    </option>
+                    <option value="kyiv">Рівне</option>
+                    <option value="lviv">Луцьк</option>
+                  </select>
 
-                <button type="submit" class="form__btn">Замовити телефонний дзвінок</button>
-              </form>
+                  <button type="submit" class="form__btn" id="openModalBtn">
+                    Замовити телефонний дзвінок
+                  </button>
+                </form>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div id="modalPopUp" class="modal">
+          <div class="modal__content">
+            <img
+              src="@img/icons/cross.svg"
+              class="modal__close"
+              id="closeModalBtn"
+              width="22"
+              height="23"
+            />
+            <img
+              src="@img/icons/tip-modal.svg"
+              alt="tip"
+              class="modal__tip"
+              width="90"
+              height="90"
+            />
+            <p class="modal__title">
+              Дякуємо вам за заявку! Найближчим часом наш консультант зв’яжеться
+              з вами
+            </p>
+            <p class="modal__text">
+              Будьте в курсі останніх новин компанії, підписуйтесь на нас в
+              соціальних мережах
+            </p>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <a href="https://www.facebook.com/ua.restart/">
+                  <img
+                    src="@img/icons/facebook-color 1.svg"
+                    alt="facebook"
+                    width="38"
+                    height="38"
+                  />
+                </a>
+              </li>
+
+              <li class="modal__item">
+                <a href="https://www.instagram.com/ua.restart/">
+                  <img
+                    src="@img/icons/instagram.svg"
+                    alt="instagram"
+                    width="38"
+                    height="38"
+                  />
+                </a>
+              </li>
+
+              <li class="modal__item">
+                <a
+                  href="https://www.youtube.com/channel/UCpK-X0sflrvjTzSX0eWaO2Q/videos"
+                >
+                  <img
+                    src="@img/icons/youtube.svg"
+                    alt="youtube"
+                    width="38"
+                    height="38"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------Assortment section--------------------->
+
+      <section class="assortment">
+        <div class="container">
+          <div class="assortment__inner">
+            <p class="assortment__title">Мережа СЦТ Restart (Рестарт) надає наступні послуги</p>
+
+            <div class="assortment__wrapper">
+              <div class="assortment__starter-block">
+                <p class="assortment__starter-title">Стартери</p>
+                <ul class="assortment__starter-list">
+                  <li class="assortment__starter-item">
+                    <ul>
+                      <li>
+                        <p>діагностика стартера</p>
+                      </li>
+                      <li>
+                        <p>ремонт стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна бендикса</p>
+                      </li>
+                      <li>
+                        <p>заміна втягуючого реле (соленоїда)</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="assortment__starter-item">
+                    <ul>
+                      <li>
+                        <p>заміна втягуючого реле (соленоїда)</p>
+                      </li>
+                      <li>
+                        <p>заміна статора стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна ротора стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна втулок</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="assortment__starter-item">
+                    <ul>
+                      <li>
+                        <p>заміна щіток стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна щіткотримача стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна редуктора стартера</p>
+                      </li>
+                      <li>
+                        <p>заміна корпуса стартера</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="assortment__starter-item">
+                    <ul>
+                      <li>
+                        <p>продаж стартерів</p>
+                      </li>
+                      <li>
+                        <p>продаж компонентів стартера</p>
+                      </li>
+                      <li>
+                        <p>продаж стартерів</p>
+                      </li>
+                      <li>
+                        <p>продаж компонентів стартера</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+<p class="assortment__text">Підібрати стартер та деталі стартера можна в <a href="#">інтернет-магазині</a></p>
+              </div>
             </div>
           </div>
         </div>
