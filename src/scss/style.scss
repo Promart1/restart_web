@@ -1661,7 +1661,7 @@ body {
     margin-top: 38px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(426px, 1fr));
-    gap: 41px;
+    gap: 51px 41px;
   }
 
   &__address {
@@ -1752,8 +1752,7 @@ body {
 
 .form {
   &__inner {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 106px;
     position: relative;
 
     img {
@@ -1852,7 +1851,7 @@ body {
 
   @include respond-to($l-desktop) {
     &__inner {
-      margin-top: 40px;
+      margin-top: 52px;
     }
 
     &__block-wrapper {
@@ -2010,11 +2009,10 @@ body {
   }
 }
 
-
 .assortment {
-
   &__inner {
     margin-top: 90px;
+    margin-bottom: 120px;
   }
 
   &__title {
@@ -2028,6 +2026,108 @@ body {
     margin-top: 18px;
     padding: 38px 40px 44px 40px;
     border-radius: 5px;
-    
   }
+
+  &__block::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #e2e2e2;
+    bottom: 0;
+    max-width: 100%;
+    margin-bottom: 43px;
+  }
+
+  &__block-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &__list {
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px 7px;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(119, 119, 119, 1);
+    margin-left: 9px;
+
+    li {
+      list-style: disc;
+      //  margin-left: 19px;
+    }
+
+    ::marker {
+      font-size: smaller;
+    }
+  }
+
+  &__text {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 47px;
+
+    a {
+      color: rgba(51, 122, 183, 1);
+    }
+  }
+
+  &__con-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 10px;
+  }
+
+  &__hen-text {
+    margin-top: 25px;
+  }
+
+  &__con-text {
+    margin-top: 26px;
+    padding-bottom: 0;
+  }
+
+  @include respond-to($tablet) {
+    &__inner {
+      margin-top: 62px;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__wrapper {
+      margin-top: 0;
+      padding: 22px 15px 33px 15px;
+    }
+
+    &__list {
+      margin-top: 0;
+    }
+
+    .assortment__text {
+      margin-top: 43px;
+      padding-bottom: 40px;
+    }
+
+        &__block::after {
+          
+          margin-bottom: 35px;
+        }
+  }
+
+    @include respond-to($mobile) {
+      &__item {
+        max-width: 198px;
+      }
+
+            &__wrapper {
+              margin-top: 0;
+              padding: 24px 13px 37px 13px;
+            }
+    }
 }
