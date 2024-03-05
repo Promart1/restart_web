@@ -2118,82 +2118,84 @@ body {
       padding-bottom: 40px;
     }
 
-        &__block::after {
-          
-          margin-bottom: 35px;
-        }
+    &__block::after {
+      margin-bottom: 35px;
+    }
   }
 
-    @include respond-to($mobile) {
-      &__item {
-        max-width: 198px;
-      }
-
-            &__wrapper {
-              margin-top: 0;
-              padding: 24px 13px 37px 13px;
-            }
+  @include respond-to($mobile) {
+    &__item {
+      max-width: 198px;
     }
+
+    &__wrapper {
+      margin-top: 0;
+      padding: 24px 13px 37px 13px;
+    }
+  }
 }
 
+////////////////////////SOLUTION_PAGE////////////////////////////////
+
+
 .solution {
-background: $secondary-bg-color;
-margin-top: -40px;
+  background: $secondary-bg-color;
+  margin-top: -40px;
 
-@include respond-to($desktop) {
-  margin-top: 29px;
+  @include respond-to($desktop) {
+    margin-top: 29px;
 
-  &__title {
-    padding-top: 27px;
-  }
+    &__title {
+      padding-top: 27px;
+    }
 
     &__list {
       margin-top: 30px;
     }
-}
+  }
 
-@include respond-to($mobile) {
-margin-top: 16px;
+  @include respond-to($mobile) {
+    margin-top: 16px;
 
-&__wrapper {
-  display: flex;
-    flex-direction: column-reverse;
-}
+    &__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__title {
+      text-align: center;
+      max-width: 231px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 37px;
+    }
+
+    &__list {
+      order: 2;
+      margin-top: -25px;
+      gap: 32px 19px;
+    }
+
+    &__img-wrapper {
+      order: 1;
+      margin-top: 75px;
+    }
+
+    &__text {
+      margin-top: 9px;
+      max-width: 290px;
+    }
+  }
 
   &__title {
-    text-align: center;
-    max-width: 231px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 37px;
+    padding-top: 114px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   &__list {
-    order: 2;
-    margin-top: -25px;
-    gap: 32px 19px;
-  }
-
-  &__img-wrapper {
-    order: 1;
-    margin-top: 75px;
-  }
-
-       &__text {
-        margin-top: 9px;
-        max-width: 290px;
-       }
-}
-
-&__title {
-  padding-top: 114px;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-&__list {
-  margin-top: 42px;
-  display: grid;
+    margin-top: 42px;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
     align-self: center;
     gap: 34px 19px;
@@ -2203,73 +2205,159 @@ margin-top: 16px;
       margin-right: auto;
       margin-left: auto;
     }
-}
-
-&__list {
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 34px 5px;
-  margin-top: 45px;
-}
-
-&__sec-list {
-  @include respond-to($tablet) {
-    margin-top: 16px;
   }
+
+  &__list {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 34px 5px;
+    margin-top: 45px;
+  }
+
+  &__sec-list {
+    @include respond-to($tablet) {
+      margin-top: 16px;
+    }
 
     @include respond-to($mobile) {
       margin-top: -4px;
       margin-bottom: 80px;
     }
-}
-
-&__text {
-  margin-top: 16px;
-  font-size: 16px;
-  line-height: 22px;
-  max-width: 219px;
-  color: rgba(102, 102, 102, 1);
- margin-left: auto;
- margin-right: auto;
-}
-
-&__img-wrapper {
-  max-width: 1359px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-&__img {
-  margin-top: -11px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-&__sec-title {
-  margin-top: -85px;
-  padding-top: 0;
-
-  @include respond-to($tablet) {
-    margin-top: -30px;
   }
+
+  &__text {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 219px;
+    color: rgba(102, 102, 102, 1);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__img-wrapper {
+    max-width: 1359px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__img {
+    margin-top: -11px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__sec-title {
+    margin-top: -85px;
+    padding-top: 0;
+
+    @include respond-to($tablet) {
+      margin-top: -30px;
+    }
 
     @include respond-to($mobile) {
       margin-top: 53px;
       padding-top: 0;
     }
-}
+  }
 
-&__sec-img {
+  &__sec-img {
+    margin-top: -35px;
+    margin-bottom: 40px;
 
-  margin-top: -35px;
-  margin-bottom: 40px;
+    @include respond-to($tablet) {
+      margin-bottom: 59px;
+    }
 
-@include respond-to($tablet) {
-  margin-bottom: 59px;
-}
-
-  @include respond-to($mobile) {
-    margin-top: -65px;
+    @include respond-to($mobile) {
+      margin-top: -65px;
+    }
   }
 }
-}
 
+
+////////////////////////CONTACTS_PAGE////////////////////////////////
+
+.contacts {
+  background: $secondary-bg-color;
+  margin-top: -40px;
+  padding-top: 95px;
+  padding-bottom: 65px;
+  margin-bottom: 80px;
+
+  &__wrapper {
+    display: flex;
+    gap: 58px;
+
+  }
+
+  &__info {
+    margin-top: 23px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 37px;
+
+    span {
+      color: rgba(153, 153, 153, 1);
+    }
+  }
+
+ &__link {
+    color: rgba(51, 122, 183, 1);
+  }
+
+  &__viber {
+    color: rgba(121, 80, 154, 1);
+  }
+
+  // &__map {
+  //   width: 100%;
+  //  max-width: 1000px;
+  //  max-height: 570px;
+  // }
+
+    &__map {
+      text-align: center;
+     max-width: 1000px;
+     height: 570px;
+     flex-grow: 1;
+    }
+  
+    iframe,
+    object,
+    embed {
+      
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+        @include respond-to($desktop) {
+          margin-top: 0;
+          padding-top: 38px;
+          padding-bottom: 0;
+          margin-bottom: 0;
+
+          &__wrapper {
+            display: block;
+            padding-right: 0;
+            padding-left: 0;
+          }
+
+&__info {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+        }
+}
