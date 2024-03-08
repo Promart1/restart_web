@@ -23,96 +23,84 @@ menuShadow.addEventListener('click', (event) => {
     }
 });
 
+//navigation
 
+document.addEventListener('DOMContentLoaded', function () {
+   
+    var currentUrl = window.location.href;
+    var menuLinks = document.querySelectorAll('.menu__link');
 
-
-
-
-
-
-const slider = document.querySelector('.slider input');
-const img = document.querySelector('.images .img-2');
-const dragLine = document.querySelector('.slider .drag-line');
-slider.oninput = () => {
-  let sliderVar = slider.value;
-  dragLine.style.left = sliderVar + "%";
-   img.style.width = sliderVar + "%";
-}
-
-// const container = document.querySelector('.container-slider');
-
-// document.querySelector('.slider').addEventListener('input', (e) => {
-//   const value = e.target.value;
-//   const percentage = `${value}%`;
-//   container.style.setProperty('--position', percentage);
-// });
-
-
-
+    menuLinks.forEach(function (link) {
+      
+      if (link.href === currentUrl) {
+        link.classList.add('active');
+      }
+    });
+  });
 
 
 
 
 //Modal PopUp
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-  var modal = document.getElementById('modalPopUp');
-  var openModalBtn = document.getElementById('openModalBtn');
-  var closeModalBtn = document.getElementById('closeModalBtn');
+  const slider = document.querySelector('.slider input');
+  const img = document.querySelector('.images .img-2');
+  const dragLine = document.querySelector('.slider .drag-line');
 
-  if (modal && openModalBtn && closeModalBtn) {
-    openModalBtn.onclick = function() {
-      modal.style.display = 'block';
-    }
-
-    closeModalBtn.onclick = function() {
-      modal.style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
-    }
-  } else {
-    console.error('One or more elements not found.');
+  if (slider) {
+    slider.oninput = () => {
+      let sliderVar = slider.value;
+      dragLine.style.left = sliderVar + "%";
+      img.style.width = sliderVar + "%";
+    };
   }
 });
 
-// var modal = document.getElementById('modalPopUp');
-// var openModalBtn = document.getElementById('openModalBtn');
-// var closeModalBtn = document.getElementById('closeModalBtn');
 
-// console.log(modal, openModalBtn, closeModalBtn);
 
-// openModalBtn.onclick = function() {
-//   modal.style.display = 'block';
-// }
 
-// closeModalBtn.onclick = function() {
-//   modal.style.display = 'none';
-// }
 
-// window.onclick = function(event) {
-//   if (event.target === modal) {
-//     modal.style.display = 'none';
-//   }
-// }
+
+
+
+
+
+
 
 // slider
 
-// const container = document.querySelector('.container-slider');
 
-// document.querySelector('.slider').addEventListener('input', (e) => {
-//   const value = e.target.value;
-//   const percentage = `${value}%`;
-//   container.style.setProperty('--position', percentage);
-// });
 
-// const container = document.querySelector('.container-slider');
+document.addEventListener('DOMContentLoaded', function() {
+  var openModalBtn = document.getElementById('openModalBtn');
+  var nameInput = document.getElementById('name');
+  var phoneInput = document.getElementById('phone');
+  var cityInput = document.getElementById('city');
+  var modal = document.getElementById('modalPopUp');
+  var closeModalBtn = document.getElementById('closeModalBtn');
 
-// document.querySelector('.slider').addEventListener('input', (e) => {
-//   const value = e.target.value;
-//   const percentage = `${value}%`;
-//   container.style.setProperty('--position', percentage);
-// });
+  openModalBtn.addEventListener('click', function(event) {
+    event.preventDefault(); 
 
+   
+    if (nameInput.value.trim() !== '' && phoneInput.value.trim() !== '' && cityInput.value !== '') {
+      modal.style.display = 'block';
+    } else {
+      
+      alert('Please fill in all required fields.');
+    }
+  });
+
+  closeModalBtn.onclick = function() {
+    modal.style.display = 'none';
+  };
+
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+});
