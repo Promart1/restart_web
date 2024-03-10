@@ -223,10 +223,6 @@ body {
   padding-bottom: 13px;
 }
 
-.main {
-  position: relative;
-}
-
 .main__container {
   padding-left: 0;
   padding-right: 0;
@@ -322,20 +318,15 @@ body {
 
 .wrapper {
   margin-top: -40px;
-  display: -ms-grid;
-  display: grid;
   place-content: center;
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
   overflow: hidden;
   --position: 50%;
-  max-width: 1920px;
+  width: 100%;
 }
 
 .image-container {
-  max-width: 1920px;
-  max-height: 90vh;
+  width: 100%;
   position: relative;
 }
 
