@@ -3,15 +3,15 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240309183652" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240310115720" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240309183652" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240310115720" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240309183652" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240310115720" rel="stylesheet">
   <title>Restart</title>
 </head>
 
@@ -46,11 +46,11 @@
         </li>
 
         <li class="menu__item">
-          <a href="../about.html" class="menu__link">Про компанію</a>
+          <a href="/about.html" class="menu__link">Про компанію</a>
         </li>
 
         <li class="menu__item">
-          <a href="../stores.html" class="menu__link">Мережа СТЦ</a>
+          <a href="/stores.html" class="menu__link">Мережа СТЦ</a>
         </li>
 
         <li class="menu__item">
@@ -58,11 +58,11 @@
         </li>
 
         <li class="menu__item">
-          <a href="../solution.html" class="menu__link">Готові рішення для СТО</a>
+          <a href="/solution.html" class="menu__link">Готові рішення для СТО</a>
         </li>
 
         <li class="menu__item">
-          <a href="../contacts.html" class="menu__link">Контакти</a>
+          <a href="/contacts.html" class="menu__link">Контакти</a>
         </li>
         
       </ul>
@@ -78,8 +78,8 @@
 
         <!-- <div class="wrapper">
           <div class="images">
-            <img src="img/background-first.png" alt="" class="img-1">
-            <img src="img/background-second.png" alt="" class="img-2">
+            <picture><source srcset="img/background-first.webp" type="image/webp"><img src="img/background-first.png" alt="" class="img-1"></picture>
+            <picture><source srcset="img/background-second.webp" type="image/webp"><img src="img/background-second.png" alt="" class="img-2"></picture>
           </div>
           <div class="slider">
             <div class="drag-line">
@@ -104,11 +104,40 @@
         </div> -->
 
         <div class="container main__container">
+
+<div class="wrapper">
+  <div class="image-container">
+    <picture><source srcset="img/bg1.webp" type="image/webp"><img src="img/bg1.jpg" alt="" class="image-before slider-image"></picture>
+    <picture><source srcset="img/bg2.webp" type="image/webp"><img src="img/bg2.webp" alt="" class="image-after slider-image"></picture>
+  </div>
+
+  <input class="slider" type="range" min="0" max="100" value="50">
+<div class="slider-line" aria-hidden="true"></div>
+<div class="slider-button" aria-hidden="true">
+  <span>
+                <div class="main__nav-wrapper">
+              <img
+                src="img/icons/arr-right.svg"
+                alt="array"
+                class="main__icon"
+              />
+              <img src="img/icons/line.svg" alt="array" class="main__icon" />
+              <img
+                src="img/icons/arr-left.svg"
+                alt="array"
+                class="main__icon"
+              />
+            </div>
+              </span>
+</div>
+
+</div>
+
          
- <div class="wrapper">
+ <!-- <div class="wrapper">
           <div class="images">
-            <img src="img/bg1.jpg" alt="" class="img-1">
-            <img src="img/bg2.webp" alt="" class="img-2">
+            <picture><source srcset="img/bg1.webp" type="image/webp"><img src="img/bg1.jpg" alt="" class="img-1"></picture>
+            <picture><source srcset="img/bg2.webp" type="image/webp"><img src="img/bg2.webp" alt="" class="img-2"></picture>
           </div>
           <div class="slider">
             <div class="drag-line">
@@ -130,7 +159,7 @@
             </div>
             <input class="input" type="range" min="0" max="100" value="50">
           </div>
-        </div>
+        </div> -->
 
 
           <div class="main__wrapper">
@@ -195,7 +224,7 @@
             <div class="nav__blocks-wrapper">
               <a href="./stores.html">
                 <div class="nav__block">
-                  <img src="img/nav_img-first.png" alt="mechanic" />
+                  <picture><source srcset="img/nav_img-first.webp" type="image/webp"><img src="img/nav_img-first.png" alt="mechanic" /></picture>
                   <h2 class="nav__block-title">Мережа СТЦ</h2>
                   <p class="nav__block-text">
                     Ремонт стартерів, генераторів, кондиціонерів
@@ -205,7 +234,7 @@
 
               <a href="#">
                 <div class="nav__block">
-                  <img src="img/nav_img-sec.png" alt="internet-shop" />
+                  <picture><source srcset="img/nav_img-sec.webp" type="image/webp"><img src="img/nav_img-sec.png" alt="internet-shop" /></picture>
                   <h2 class="nav__block-title">Інтернет-магазин</h2>
                   <p class="nav__block-text">
                     Понад 15 000 позицій агрегатів та компонентів
@@ -215,7 +244,7 @@
 
               <a href="">
                 <div class="nav__block">
-                  <img src="img/nav_img-third.png" alt="man" />
+                  <picture><source srcset="img/nav_img-third.webp" type="image/webp"><img src="img/nav_img-third.png" alt="man" /></picture>
                   <h2 class="nav__block-title">Готові рішення</h2>
                   <p class="nav__block-text">
                     Готові рішення <br />
@@ -247,11 +276,11 @@
         </li>
 
         <li class="menu__item">
-          <a href="../about.html" class="menu__link">Про компанію</a>
+          <a href="/about.html" class="menu__link">Про компанію</a>
         </li>
 
         <li class="menu__item">
-          <a href="../stores.html" class="menu__link">Мережа СТЦ</a>
+          <a href="/stores.html" class="menu__link">Мережа СТЦ</a>
         </li>
 
         <li class="menu__item">
@@ -259,11 +288,11 @@
         </li>
 
         <li class="menu__item">
-          <a href="../solution.html" class="menu__link">Готові рішення для СТО</a>
+          <a href="/solution.html" class="menu__link">Готові рішення для СТО</a>
         </li>
 
         <li class="menu__item">
-          <a href="../contacts.html" class="menu__link">Контакти</a>
+          <a href="/contacts.html" class="menu__link">Контакти</a>
         </li>
         
       </ul>
@@ -287,6 +316,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20240309183652" defer></script>
+    <script src="js/app.min.js?_v=20240310115720" defer></script>
   </body>
 </html>
