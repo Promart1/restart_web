@@ -73,34 +73,42 @@ document.addEventListener('DOMContentLoaded', function() {
 // slider
 
 
+const container = document.querySelector('.wrapper');
+document.querySelector('.slider').addEventListener('input', (e) => {
+  container.style.setProperty('--position', `${e.target.value}%`);
+})
 
-document.addEventListener('DOMContentLoaded', function() {
-  var openModalBtn = document.getElementById('openModalBtn');
-  var nameInput = document.getElementById('name');
-  var phoneInput = document.getElementById('phone');
-  var cityInput = document.getElementById('city');
-  var modal = document.getElementById('modalPopUp');
-  var closeModalBtn = document.getElementById('closeModalBtn');
 
-  openModalBtn.addEventListener('click', function(event) {
-    event.preventDefault(); 
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   var openModalBtn = document.getElementById('openModalBtn');
+//   var nameInput = document.getElementById('name');
+//   var phoneInput = document.getElementById('phone');
+//   var cityInput = document.getElementById('city');
+//   var modal = document.getElementById('modalPopUp');
+//   var closeModalBtn = document.getElementById('closeModalBtn');
+
+//   openModalBtn.addEventListener('click', function(event) {
+//     event.preventDefault(); 
 
    
-    if (nameInput.value.trim() !== '' && phoneInput.value.trim() !== '' && cityInput.value !== '') {
-      modal.style.display = 'block';
-    } else {
+//     if (nameInput.value.trim() !== '' && phoneInput.value.trim() !== '' && cityInput.value !== '') {
+//       modal.style.display = 'block';
+//     } else {
       
-      alert('Please fill in all required fields.');
-    }
-  });
+//       alert('Please fill in all required fields.');
+//     }
+//   });
 
-  closeModalBtn.onclick = function() {
-    modal.style.display = 'none';
-  };
+//   closeModalBtn.onclick = function() {
+//     modal.style.display = 'none';
+//   };
 
-  window.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  };
-});
+//   window.onclick = function(event) {
+//     if (event.target === modal) {
+//       modal.style.display = 'none';
+//     }
+//   };
+// });
