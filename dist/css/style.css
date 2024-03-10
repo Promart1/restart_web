@@ -230,7 +230,7 @@ body {
 .main__container {
   padding-left: 0;
   padding-right: 0;
-  max-width: 100%;
+  max-width: 1920px;
   position: relative;
 }
 
@@ -326,13 +326,17 @@ body {
   display: grid;
   place-content: center;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
   overflow: hidden;
   --position: 50%;
+  max-width: 1920px;
 }
 
 .image-container {
-  width: 100%;
+  max-width: 1920px;
   max-height: 90vh;
+  position: relative;
 }
 
 .slider-image {
@@ -1432,6 +1436,11 @@ body {
   .container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .main__container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .about__content-text {
