@@ -1685,6 +1685,7 @@ body {
         -ms-flex-align: start;
             align-items: start;
     position: static;
+    z-index: 1;
   }
 
   .main__content {
