@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Restart" })
+  <body id="main_page">
+    @@include('html/header.html',{})
+    <main>
+      <!------------------main_section ----------------------->
+
+      <section class="main">
+
+        <!-- <div class="wrapper">
+          <div class="images">
+            <img src="@img/background-first.png" alt="" class="img-1">
+            <img src="@img/background-second.png" alt="" class="img-2">
+          </div>
+          <div class="slider">
+            <div class="drag-line">
+              <span>
+                <div class="main__nav-wrapper">
+              <img
+                src="@img/icons/arr-right.svg"
+                alt="array"
+                class="main__icon"
+              />
+              <img src="@img/icons/line.svg" alt="array" class="main__icon" />
+              <img
+                src="@img/icons/arr-left.svg"
+                alt="array"
+                class="main__icon"
+              />
+            </div>
+              </span>
+            </div>
+            <input type="range" min="0" max="100" value="50">
+          </div>
+        </div> -->
+
+        <div class="main__container container">
+
+<div class="wrapper">
+  <div class="image-container">
+    <img src="@img/bg1.jpg" alt="" class="image-before slider-image">
+    <img src="@img/bg2.webp" alt="" class="image-after slider-image">
+  </div>
+
+  <input class="slider" type="range" min="0" max="100" value="50">
+<div class="slider-line" aria-hidden="true"></div>
+<div class="slider-button" aria-hidden="true">
+  <span>
+                <div class="main__nav-wrapper">
+              <img
+                src="@img/icons/arr-right.svg"
+                alt="array"
+                class="main__icon"
+              />
+              <img src="@img/icons/line.svg" alt="array" class="main__icon" />
+              <img
+                src="@img/icons/arr-left.svg"
+                alt="array"
+                class="main__icon"
+              />
+            </div>
+              </span>
+</div>
+
+</div>
+
+         
+ <!-- <div class="wrapper">
+          <div class="images">
+            <img src="@img/bg1.jpg" alt="" class="img-1">
+            <img src="@img/bg2.webp" alt="" class="img-2">
+          </div>
+          <div class="slider">
+            <div class="drag-line">
+              <span>
+                <div class="main__nav-wrapper">
+              <img
+                src="@img/icons/arr-right.svg"
+                alt="array"
+                class="main__icon"
+              />
+              <img src="@img/icons/line.svg" alt="array" class="main__icon" />
+              <img
+                src="@img/icons/arr-left.svg"
+                alt="array"
+                class="main__icon"
+              />
+            </div>
+              </span>
+            </div>
+            <input class="input" type="range" min="0" max="100" value="50">
+          </div>
+        </div> -->
+
+
+          <div class="main__wrapper">
+            <div class="main__block">
+              <div class="main__content">
+                <img
+                  src="@img/icons/analysis.svg"
+                  alt="analysis"
+                  class="main__img"
+                  width="42"
+                  height="42"
+                />
+                <p class="main__text">
+                  Діагностика та ремонт стартерів, генераторів, кондиціонерів
+                </p>
+              </div>
+              <div class="main__btn-wrapper">
+                <a href="./stores.html">
+                  <button class="main__btn">Мережа сервісів</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="main__block main__sec-block">
+              <div class="main__content">
+                <img
+                  src="@img/icons/sale.svg"
+                  alt="sale"
+                  class="main__img"
+                  width="42"
+                  height="42"
+                />
+                <p class="main__text-s">
+                  Продаж стартерів, генераторів та компонентів
+                </p>
+              </div>
+              <div class="main__btn-wrapper">
+                <a href="#">
+                  <button class="main__btn">Перейти в магазин</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------nav_section ----------------------->
+
+      <section class="nav">
+        <div class="container">
+          <div class="nav__inner">
+            <img
+              src="@img/icons/logo.svg"
+              alt="logo"
+              width="187"
+              height="67"
+              class="nav__logo"
+            />
+            <p class="nav__title">
+              Справжні професіонали на ринку стартерів та генераторів
+            </p>
+            <div class="nav__blocks-wrapper">
+              <a href="./stores.html">
+                <div class="nav__block">
+                  <img src="@img/nav_img-first.png" alt="mechanic" />
+                  <h2 class="nav__block-title">Мережа СТЦ</h2>
+                  <p class="nav__block-text">
+                    Ремонт стартерів, генераторів, кондиціонерів
+                  </p>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="nav__block">
+                  <img src="@img/nav_img-sec.png" alt="internet-shop" />
+                  <h2 class="nav__block-title">Інтернет-магазин</h2>
+                  <p class="nav__block-text">
+                    Понад 15 000 позицій агрегатів та компонентів
+                  </p>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="nav__block">
+                  <img src="@img/nav_img-third.png" alt="man" />
+                  <h2 class="nav__block-title">Готові рішення</h2>
+                  <p class="nav__block-text">
+                    Готові рішення <br />
+                    в стар-ген сегменті для СТО
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <p class="nav__text">
+              У нас представлений широкий асортимент запчастин та комплектуючих
+              для вантажних та легкових авто, сільськогосподарських машин,
+              водомоторної техніки, а також мотоциклів та промислового сектору
+              ринку.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js" defer></script>
+  </body>
+</html>
