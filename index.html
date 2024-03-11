@@ -3,15 +3,20 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240310192043" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240311173155" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240310192043" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240311173155" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240310192043" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240311173155" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/css/select2.min.css?_v=20240311173155" integrity="sha512-Yd2IPVn3EeE/JLsqKa60jwIpjP5T4iI5fuTucd3kPfh6b1c6O8Xxv3yxN92o/z5sxCt9obG9Hf2NU5fO6C37lg==" crossorigin="anonymous" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240311173155" integrity="sha512-u7io5LcDXVs3dV1/+U2m8ctT+u/eawjN5xHdVCpLuXndO5mISdTyc2Rwmz9NlH2Np5u1cKgCxh9cfOx9um8a1w==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/js/select2.min.js?_v=20240311173155" integrity="sha512-YXy4xF5EMrs0Mnjb4B6s74YFG+kuZfFNtJ8e8vwGcZyE9TOA6q3ui+HG5As6lGMFGf2rIM4Tl/vaUzqIId6RQ==" crossorigin="anonymous"></script>
   <title>Restart</title>
 </head>
 
@@ -24,9 +29,11 @@
 
     <div class="header__inner">
       <div class="header__logo-wrapper">
+        <div class="header__logo">
         <a href="./">
       <img src="img/icons/logo.svg" alt="logo" width="184" height="67" />
       </a>
+      </div>
       <p class="header__text">Restart — Ваша зона автокомфорту</p>
     </div>
       <button class="menu__button">
@@ -75,34 +82,6 @@
       <!------------------main_section ----------------------->
 
       <section class="main">
-
-        <!-- <div class="wrapper">
-          <div class="images">
-            <picture><source srcset="img/background-first.webp" type="image/webp"><img src="img/background-first.png" alt="" class="img-1"></picture>
-            <picture><source srcset="img/background-second.webp" type="image/webp"><img src="img/background-second.png" alt="" class="img-2"></picture>
-          </div>
-          <div class="slider">
-            <div class="drag-line">
-              <span>
-                <div class="main__nav-wrapper">
-              <img
-                src="img/icons/arr-right.svg"
-                alt="array"
-                class="main__icon"
-              />
-              <img src="img/icons/line.svg" alt="array" class="main__icon" />
-              <img
-                src="img/icons/arr-left.svg"
-                alt="array"
-                class="main__icon"
-              />
-            </div>
-              </span>
-            </div>
-            <input type="range" min="0" max="100" value="50">
-          </div>
-        </div> -->
-
         <div class="main__container container">
 
 <div class="wrapper">
@@ -114,7 +93,7 @@
   <input class="slider" type="range" min="0" max="100" value="50">
 <div class="slider-line" aria-hidden="true"></div>
 <div class="slider-button" aria-hidden="true">
-  <span>
+  <div>
                 <div class="main__nav-wrapper">
               <img
                 src="img/icons/arr-right.svg"
@@ -128,39 +107,10 @@
                 class="main__icon"
               />
             </div>
-              </span>
+          </div>
 </div>
 
 </div>
-
-         
- <!-- <div class="wrapper">
-          <div class="images">
-            <picture><source srcset="img/bg1.webp" type="image/webp"><img src="img/bg1.jpg" alt="" class="img-1"></picture>
-            <picture><source srcset="img/bg2.webp" type="image/webp"><img src="img/bg2.webp" alt="" class="img-2"></picture>
-          </div>
-          <div class="slider">
-            <div class="drag-line">
-              <span>
-                <div class="main__nav-wrapper">
-              <img
-                src="img/icons/arr-right.svg"
-                alt="array"
-                class="main__icon"
-              />
-              <img src="img/icons/line.svg" alt="array" class="main__icon" />
-              <img
-                src="img/icons/arr-left.svg"
-                alt="array"
-                class="main__icon"
-              />
-            </div>
-              </span>
-            </div>
-            <input class="input" type="range" min="0" max="100" value="50">
-          </div>
-        </div> -->
-
 
           <div class="main__wrapper">
             <div class="main__block">
@@ -177,9 +127,11 @@
                 </p>
               </div>
               <div class="main__btn-wrapper">
-                <a href="./stores.html">
-                  <button class="main__btn">Мережа сервісів</button>
-                </a>
+                
+                  <button class="main__btn">
+                    <a href="./stores.html">Мережа сервісів</a>
+                  </button>
+               
               </div>
             </div>
 
@@ -197,9 +149,11 @@
                 </p>
               </div>
               <div class="main__btn-wrapper">
-                <a href="#">
-                  <button class="main__btn">Перейти в магазин</button>
-                </a>
+                
+                  <button class="main__btn">
+                    <a href="#">Перейти в магазин</a>
+                  </button>
+               
               </div>
             </div>
           </div>
@@ -316,6 +270,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20240310192043" defer></script>
+    <script src="js/app.min.js?_v=20240311173155" defer></script>
   </body>
 </html>

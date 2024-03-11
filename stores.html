@@ -3,15 +3,20 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240310192043" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240311173155" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240310192043" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240311173155" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240310192043" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240311173155" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/css/select2.min.css?_v=20240311173155" integrity="sha512-Yd2IPVn3EeE/JLsqKa60jwIpjP5T4iI5fuTucd3kPfh6b1c6O8Xxv3yxN92o/z5sxCt9obG9Hf2NU5fO6C37lg==" crossorigin="anonymous" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240311173155" integrity="sha512-u7io5LcDXVs3dV1/+U2m8ctT+u/eawjN5xHdVCpLuXndO5mISdTyc2Rwmz9NlH2Np5u1cKgCxh9cfOx9um8a1w==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/js/select2.min.js?_v=20240311173155" integrity="sha512-YXy4xF5EMrs0Mnjb4B6s74YFG+kuZfFNtJ8e8vwGcZyE9TOA6q3ui+HG5As6lGMFGf2rIM4Tl/vaUzqIId6RQ==" crossorigin="anonymous"></script>
   <title>About us</title>
 </head>
 
@@ -24,9 +29,11 @@
 
     <div class="header__inner">
       <div class="header__logo-wrapper">
+        <div class="header__logo">
         <a href="./">
       <img src="img/icons/logo.svg" alt="logo" width="184" height="67" />
       </a>
+      </div>
       <p class="header__text">Restart — Ваша зона автокомфорту</p>
     </div>
       <button class="menu__button">
@@ -144,9 +151,9 @@
       <section class="tehcenter">
         <div class="container">
           <div class="tehcenter__inner">
-            <p class="tehcenter__title">
+            <h2 class="tehcenter__title">
               Сьогодні в Компанії є 7 діючих сервісно-технічних центрів
-            </p>
+            </h2>
             <div class="tehcenter__block">
               <div>
                 <div class="tehcenter__block-title-wrapper">
@@ -168,9 +175,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="#pidkovy">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                          
+                            <button class="tehcenter__btn">
+                              <a href="#pidkovy">Як проїхати</a>
+                            </button>
+                          
                         </div>
                       </div>
                     </li>
@@ -188,9 +197,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="#kyivska">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                          
+                            <button class="tehcenter__btn">
+                              <a href="#kyivska">Як проїхати</a>
+                            </button>
+                          
                         </div>
                       </div>
                     </li>
@@ -208,9 +219,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="#soborna">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                         
+                            <button class="tehcenter__btn">
+                               <a href="#soborna">Як проїхати</a>
+                              </button>
+                         
                         </div>
                       </div>
                     </li>
@@ -229,9 +242,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                          
+                            <button class="tehcenter__btn">
+                              <a href="#lytsk">Як проїхати</a>
+                            </button>
+                         
                         </div>
                       </div>
                     </li>
@@ -241,7 +256,7 @@
 
               <div>
                 <div class="tehcenter__block-title-wrapper">
-                  <img src="img/icons/location.svg" alt="" />
+                  <img src="img/icons/location.svg" alt="location" />
                   <p class="tehcenter__block-title">СТЦ у Луцьку</p>
                 </div>
                 <div class="tehcenter__block-wrapper">
@@ -256,9 +271,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="#lytsk">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                          
+                            <button class="tehcenter__btn">
+                              <a href="#lytsk">Як проїхати</a>
+                            </button>
+                         
                         </div>
                       </div>
                     </li>
@@ -276,9 +293,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="#honhadse">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                          
+                            <button class="tehcenter__btn">
+                              <a href="#honhadse">Як проїхати</a>
+                              </button>
+                          
                         </div>
                       </div>
                     </li>
@@ -300,9 +319,11 @@
                         </div>
 
                         <div class="tehcenter__btn-wrapper">
-                          <a href="#lytsk">
-                            <button class="tehcenter__btn">Як проїхати</button>
-                          </a>
+                          
+                            <button class="tehcenter__btn">
+                              <a href="#lytsk">Як проїхати</a>
+                            </button>
+                          
                         </div>
                       </div>
                     </li>
@@ -419,7 +440,7 @@
                   <label for="city" class="form__label"
                     >Місто <span>*</span></label
                   >
-                  <select id="city" class="form__input" name="city" required>
+                  <select id="city" class="form__input form__select" name="city" required>
                     <option value="" disabled selected>
                       Оберіть місто зі списку
                     </option>
@@ -440,6 +461,7 @@
           <div class="modal__content">
             <img
               src="img/icons/cross.svg"
+              alt="cross"
               class="modal__close"
               id="closeModalBtn"
               width="22"
@@ -462,9 +484,9 @@
             </p>
             <ul class="modal__list">
               <li class="modal__item">
-                <a href="https://www.facebook.com/ua.restart/">
+                <a href="https://www.facebook.com/ua.restart/" target="_blank">
                   <img
-                    src="img/icons/facebook-color 1.svg"
+                    src="img/icons/facebook-color.svg"
                     alt="facebook"
                     width="38"
                     height="38"
@@ -473,7 +495,7 @@
               </li>
 
               <li class="modal__item">
-                <a href="https://www.instagram.com/ua.restart/">
+                <a href="https://www.instagram.com/ua.restart/" target="_blank">
                   <img
                     src="img/icons/instagram.svg"
                     alt="instagram"
@@ -486,7 +508,7 @@
               <li class="modal__item">
                 <a
                   href="https://www.youtube.com/channel/UCpK-X0sflrvjTzSX0eWaO2Q/videos"
-                >
+                target="_blank">
                   <img
                     src="img/icons/youtube.svg"
                     alt="youtube"
@@ -765,6 +787,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20240310192043"></script>
+    <script src="js/app.min.js?_v=20240311173155"></script>
   </body>
 </html>
