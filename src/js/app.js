@@ -5,13 +5,15 @@ const menuShadow = document.querySelector('.menu--close');
 
 menuBtn.addEventListener('click', () => {
     menuList.classList.toggle('menu__list--open');
-    menuShadow.classList.toggle('menu--open');
+  menuShadow.classList.toggle('menu--open');
+  document.body.style.overflow = 'hidden';
     console.log("open");
 });
 
 menuClose.addEventListener('click', () => {
     menuList.classList.remove('menu__list--open');
-    menuShadow.classList.remove('menu--open');
+  menuShadow.classList.remove('menu--open');
+  document.body.style.overflow = 'auto';
     console.log("close");
 });
 
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
     if (nameInput.value.trim() !== '' && phoneInput.value.trim() !== '' && cityInput.value !== '') {
       modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
     } else {
       
       alert('Please fill in all required fields.');
@@ -118,11 +121,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
   closeModalBtn.onclick = function() {
     modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
   };
 
   window.onclick = function(event) {
     if (event.target === modal) {
       modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
     }
   };
+});
+
+
+
+
+
+
+$(document).ready(function() {
+  $('.form__select').select2();
 });

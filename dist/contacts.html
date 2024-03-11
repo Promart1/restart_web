@@ -3,15 +3,20 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240310192043" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240311172921" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240310192043" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240311172921" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240310192043" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240311172921" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/css/select2.min.css?_v=20240311172921" integrity="sha512-Yd2IPVn3EeE/JLsqKa60jwIpjP5T4iI5fuTucd3kPfh6b1c6O8Xxv3yxN92o/z5sxCt9obG9Hf2NU5fO6C37lg==" crossorigin="anonymous" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240311172921" integrity="sha512-u7io5LcDXVs3dV1/+U2m8ctT+u/eawjN5xHdVCpLuXndO5mISdTyc2Rwmz9NlH2Np5u1cKgCxh9cfOx9um8a1w==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/js/select2.min.js?_v=20240311172921" integrity="sha512-YXy4xF5EMrs0Mnjb4B6s74YFG+kuZfFNtJ8e8vwGcZyE9TOA6q3ui+HG5As6lGMFGf2rIM4Tl/vaUzqIId6RQ==" crossorigin="anonymous"></script>
   <title>About us</title>
 </head>
 
@@ -24,9 +29,11 @@
 
     <div class="header__inner">
       <div class="header__logo-wrapper">
+        <div class="header__logo">
         <a href="./">
       <img src="img/icons/logo.svg" alt="logo" width="184" height="67" />
       </a>
+      </div>
       <p class="header__text">Restart — Ваша зона автокомфорту</p>
     </div>
       <button class="menu__button">
@@ -79,22 +86,38 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <p>Адреса офісу:</p>
+               <address>
+  Івана Підкови, 17г <br />
+  Рівне, Рівненська область, 33000 <br />
+  <a href="#" class="contacts__link">адреси сервісно-технічних центрів</a>
+</address>
+              </li>
+
+              <li class="contacts__item">
+                <p><a href="tel:+380362460443">0362 46 0443</a></p>
                 <p>
-                  Івана Підкови, 17г <br />Рівне, Рівненська область, 33000
-                  <br><a href="#" class="contacts__link">адреси сервісно-технічних центрів</a>
+                  <a href="tel:0800214343"
+                    >0800 21 4343 <span>(безкоштовно)</span></a
+                  >
+                </p>
+                <p>
+                  <a href="tel:+380673624343"
+                    >+38 067 362 4343
+                    <span class="contacts__viber">(viber)</span></a
+                  >
+                </p>
+                <p>
+                  <a href="tel:0672083470"
+                    >067 208 34 70 <span>(Регіональний менеджер)</span></a
+                  >
                 </p>
               </li>
 
               <li class="contacts__item">
-                <p>0362 46 0443</p>
-                <p>0800 21 4343 <span>(безкоштовно)</span></p>
-                <p>+38 067 362 4343 <a href="#" class="contacts__viber">(viber)</a></p>
-                <p>067 208 34 70 <span>(Регіональний менеджер)</span></p>
-              </li>
-
-              <li class="contacts__item">
                 <p>пошта: <a href="#" class="contacts__link">@restart.ua</a></p>
-                <p>facebook: <a href="#" class="contacts__link">restart.ua</a></p>
+                <p>
+                  facebook: <a href="#" class="contacts__link">restart.ua</a>
+                </p>
               </li>
 
               <li class="contacts__item">
@@ -172,6 +195,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20240310192043"></script>
+    <script src="js/app.min.js?_v=20240311172921"></script>
   </body>
 </html>
