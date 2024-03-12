@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1131,12 +1129,7 @@ body {
   margin-bottom: 16px;
 }
 
-.form__select-wrapper::after {
-  content: "∨";
-  /* Юнікод-символ стрілки вниз */
-  font-size: 19px;
-  color: rgb(130, 130, 130);
-  /* Колір стрілки */
+.form__select-wrapper img {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -1144,8 +1137,8 @@ body {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   pointer-events: none;
-  font-family: "YourCustomFont", "Arial", sans-serif;
-  /* Виключає взаємодію з псевдоелементом */
+  width: 17px;
+  height: 8px;
 }
 
 .form__btn {
@@ -1768,7 +1761,7 @@ body {
   }
 
   .main__btn {
-    padding: 18px 0;
+    padding: 18px 31px;
     width: 225px;
   }
 
@@ -2127,7 +2120,7 @@ body {
   }
 
   .main__btn {
-    padding: 16px 0;
+    padding: 16px 37px;
     width: 200px;
   }
 
