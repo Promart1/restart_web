@@ -370,6 +370,7 @@ position: absolute;
     display: flex;
     justify-content: center;
     margin-top: 32px;
+    margin-bottom: 48px;
   }
 
   &__text {
@@ -382,18 +383,19 @@ position: absolute;
     max-width: 138px;
     margin-left: 7px;
     color: $secondary-text-color;
+   
   }
 
   &__btn-wrapper {
-    margin-top: 32px;
+    
     text-align: center;
   }
 
   &__btn {
+   
     border: 1px solid $btn-border-color;
     border-radius: 30px;
-    padding: 16px 0;
-    width: 200px;
+    padding: 16px 37px;
     font-size: 16px;
     color: $btn-text-color;
     transition: color 0.3s ease background 0.3s ease;
@@ -547,11 +549,10 @@ position: absolute;
   // display: grid;
   place-content: center;
   position: relative;
-  // margin-right: auto;
-  // margin-left: auto;
   overflow: hidden;
   --position: 50%;
  width: 100%;
+
 
   @include respond-to($desktop) {
     display: none;
@@ -560,8 +561,10 @@ position: absolute;
 
 .image-container {
 width: 100%;
+// width: 100vw;
   // max-height: 90vh;
   position: relative;
+  overflow: hidden;
 }
 
 .slider-image {
@@ -577,6 +580,14 @@ width: 100%;
   width: var(--position);
   filter: grayscale(100%)
 }
+
+// .slider-wrapper {
+//   margin-right: 280px;
+//   margin-left: 280px;
+//   width: 100%;
+//   height: auto;
+//   position: relative;
+// }
 
 .slider {
   position: absolute;
@@ -1258,7 +1269,7 @@ width: 100%;
   &__btn-wrapper {
     position: absolute;
     z-index: 2;
-    top: 98px;
+    top: 115px;
     left: 38%;
     text-align: center;
   }
@@ -1266,8 +1277,7 @@ width: 100%;
   &__btn {
     border: 1px solid $btn-border-color;
     border-radius: 30px;
-    padding: 16px 0;
-    width: 230px;
+    padding: 16px 20px;
     font-size: 16px;
     color: $btn-text-color;
     transition: color 0.3s ease background 0.3s ease;
@@ -1291,7 +1301,7 @@ width: 100%;
     }
 
     &__btn-wrapper {
-      top: 300px;
+      top: 316px;
       left: 2%;
     }
 
@@ -1314,7 +1324,7 @@ width: 100%;
     }
 
     &__btn-wrapper {
-      top: 287px;
+      top: 303px;
       left: 2%;
     }
   }
@@ -1333,7 +1343,7 @@ width: 100%;
     }
 
     &__btn-wrapper {
-      top: 287px;
+      top: 303px;
       left: 2%;
     }
   }
@@ -1345,7 +1355,7 @@ width: 100%;
     }
 
     &__btn-wrapper {
-      top: 290px;
+      top: 306px;
       left: 10%;
     }
   }
@@ -1357,7 +1367,7 @@ width: 100%;
     }
 
     &__btn-wrapper {
-      top: 290px;
+      top: 306px;
       left: 10%;
     }
   }
@@ -1659,7 +1669,7 @@ width: 100%;
   &__btn {
     border: 1px solid $btn-border-color;
     border-radius: 30px;
-    padding: 16px 0;
+    padding: 16px 30px;
     width: 145px;
     font-size: 16px;
     color: $btn-text-color;
@@ -1685,9 +1695,6 @@ width: 100%;
       margin-bottom: 56px;
     }
 
-    &__btn {
-      width: 156px;
-    }
   }
 
     @include respond-to($tablet) {
@@ -1703,9 +1710,9 @@ width: 100%;
       height: 153px;
     }
 
-    &__btn {
-      width: 145px;
-      margin-top: 20px;
+    &__text {
+     
+      margin-bottom: 36px;
     }
 
     &__address-wrapper {
@@ -1718,10 +1725,16 @@ width: 100%;
       margin-top: 40px;
     }
 
-    &__block-wrapper {
-      margin-top: 8px;
+    
+
+    &__text,
+        &__address-wrapper-m {
+      margin-bottom: 36px;
     }
 
+    &__block-wrapper {
+      margin-top: 5px;
+    }
     &__block {
       margin-top: 40px;
     }
@@ -1948,15 +1961,39 @@ width: 100%;
 
  &__select {
   position: relative;
+  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+      padding: 13px;
+        font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+      border: 1px solid rgba(230, 230, 230, 1);
+      
+      color: rgba(130, 130, 130, 1);;
  }
 
- &__select:after {
-   content: '▼';
-   position: absolute;
-   top: 50%;
-   right: 10px;
-   transform: translateY(-50%);
+ &__select-wrapper {
+  position: relative;
+  margin-bottom: 16px;
  }
+
+&__select-wrapper::after {
+  content: '\2228';
+  /* Юнікод-символ стрілки вниз */
+  font-size: 19px;
+  color:  rgba(130, 130, 130, 1);;
+  /* Колір стрілки */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family: 'YourCustomFont', 'Arial', sans-serif;
+  /* Виключає взаємодію з псевдоелементом */
+}
 
   &__btn {
     width: 100%;

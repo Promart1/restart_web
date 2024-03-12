@@ -259,6 +259,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 32px;
+  margin-bottom: 48px;
 }
 
 .main__text {
@@ -274,15 +275,13 @@ body {
 }
 
 .main__btn-wrapper {
-  margin-top: 32px;
   text-align: center;
 }
 
 .main__btn {
   border: 1px solid rgb(206, 206, 206);
   border-radius: 30px;
-  padding: 16px 0;
-  width: 200px;
+  padding: 16px 37px;
   font-size: 16px;
   color: rgb(51, 51, 51);
   -webkit-transition: color 0.3s ease background 0.3s ease;
@@ -330,6 +329,7 @@ body {
 .image-container {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .slider-image {
@@ -726,7 +726,7 @@ body {
 .decision__btn-wrapper {
   position: absolute;
   z-index: 2;
-  top: 98px;
+  top: 115px;
   left: 38%;
   text-align: center;
 }
@@ -734,8 +734,7 @@ body {
 .decision__btn {
   border: 1px solid rgb(206, 206, 206);
   border-radius: 30px;
-  padding: 16px 0;
-  width: 230px;
+  padding: 16px 20px;
   font-size: 16px;
   color: rgb(51, 51, 51);
   -webkit-transition: color 0.3s ease background 0.3s ease;
@@ -950,7 +949,7 @@ body {
 .tehcenter__btn {
   border: 1px solid rgb(206, 206, 206);
   border-radius: 30px;
-  padding: 16px 0;
+  padding: 16px 30px;
   width: 145px;
   font-size: 16px;
   color: rgb(51, 51, 51);
@@ -1113,16 +1112,40 @@ body {
 
 .form__select {
   position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  padding: 13px;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgb(230, 230, 230);
+  color: rgb(130, 130, 130);
 }
 
-.form__select:after {
-  content: "▼";
+.form__select-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.form__select-wrapper::after {
+  content: "∨";
+  /* Юнікод-символ стрілки вниз */
+  font-size: 19px;
+  color: rgb(130, 130, 130);
+  /* Колір стрілки */
   position: absolute;
   top: 50%;
   right: 10px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  pointer-events: none;
+  font-family: "YourCustomFont", "Arial", sans-serif;
+  /* Виключає взаємодію з псевдоелементом */
 }
 
 .form__btn {
@@ -1502,7 +1525,7 @@ body {
   }
 
   .decision__btn-wrapper {
-    top: 300px;
+    top: 316px;
     left: 2%;
   }
 
@@ -1522,10 +1545,6 @@ body {
   .tehcenter__block-wrapper {
     width: 100%;
     margin-bottom: 56px;
-  }
-
-  .tehcenter__btn {
-    width: 156px;
   }
 }
 
@@ -2128,7 +2147,7 @@ body {
   }
 
   .decision__btn-wrapper {
-    top: 287px;
+    top: 303px;
     left: 2%;
   }
 }
@@ -2241,7 +2260,7 @@ body {
   }
 
   .decision__btn-wrapper {
-    top: 287px;
+    top: 303px;
     left: 2%;
   }
 
@@ -2250,9 +2269,8 @@ body {
     height: 153px;
   }
 
-  .tehcenter__btn {
-    width: 145px;
-    margin-top: 20px;
+  .tehcenter__text {
+    margin-bottom: 36px;
   }
 
   .tehcenter__address-wrapper {
@@ -2296,7 +2314,7 @@ body {
   }
 
   .decision__btn-wrapper {
-    top: 290px;
+    top: 306px;
     left: 10%;
   }
 
@@ -2304,8 +2322,13 @@ body {
     margin-top: 40px;
   }
 
+  .tehcenter__text,
+  .tehcenter__address-wrapper-m {
+    margin-bottom: 36px;
+  }
+
   .tehcenter__block-wrapper {
-    margin-top: 8px;
+    margin-top: 5px;
   }
 
   .tehcenter__block {
@@ -2461,7 +2484,7 @@ body {
   }
 
   .decision__btn-wrapper {
-    top: 290px;
+    top: 306px;
     left: 10%;
   }
 

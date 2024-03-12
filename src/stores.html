@@ -101,9 +101,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                           
-                            <button class="tehcenter__btn">
-                              <a href="#pidkovy">Як проїхати</a>
-                            </button>
+                              <a class="tehcenter__btn" href="#pidkovy">Як проїхати</a>
                           
                         </div>
                       </div>
@@ -123,9 +121,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                           
-                            <button class="tehcenter__btn">
-                              <a href="#kyivska">Як проїхати</a>
-                            </button>
+                              <a class="tehcenter__btn" href="#kyivska">Як проїхати</a>
                           
                         </div>
                       </div>
@@ -145,9 +141,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                          
-                            <button class="tehcenter__btn">
-                               <a href="#soborna">Як проїхати</a>
-                              </button>
+                               <a class="tehcenter__btn" href="#soborna">Як проїхати</a>
                          
                         </div>
                       </div>
@@ -157,9 +151,9 @@
                       <div class="tehcenter__address-container">
                         <div class="tehcenter__info">
                           <div
-                            class="tehcenter__address-wrapper tehcenter__adspes"
+                            class="tehcenter__address-wrapper tehcenter__adspes tehcenter__address-wrapper-m"
                           >
-                            <p class="tehcenter__address tehcenter__adspes">
+                            <p class="tehcenter__address tehcenter__adspes ">
                               Радивилів, вул. Почаївська, 3н
                             </p>
                             <p class="tehcenter__tel">096 668 11 55</p>
@@ -168,9 +162,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                           
-                            <button class="tehcenter__btn">
-                              <a href="#lytsk">Як проїхати</a>
-                            </button>
+                              <a class="tehcenter__btn" href="#lytsk">Як проїхати</a>
                          
                         </div>
                       </div>
@@ -189,7 +181,7 @@
                     <li class="tehcenter__item">
                       <div class="tehcenter__address-container tehcenter__acs">
                         <div class="tehcenter__info">
-                          <div class="tehcenter__address-wrapper">
+                          <div class="tehcenter__address-wrapper tehcenter__address-wrapper-m">
                             <p class="tehcenter__address">Кравчука, 44</p>
                             <p class="tehcenter__tel">067 800 76 22</p>
                           </div>
@@ -197,9 +189,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                           
-                            <button class="tehcenter__btn">
-                              <a href="#lytsk">Як проїхати</a>
-                            </button>
+                              <a class="tehcenter__btn" href="#lytsk">Як проїхати</a>
                          
                         </div>
                       </div>
@@ -219,9 +209,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                           
-                            <button class="tehcenter__btn">
-                              <a href="#honhadse">Як проїхати</a>
-                              </button>
+                              <a class="tehcenter__btn" href="#honhadse">Як проїхати</a>
                           
                         </div>
                       </div>
@@ -245,9 +233,7 @@
 
                         <div class="tehcenter__btn-wrapper">
                           
-                            <button class="tehcenter__btn">
-                              <a href="#lytsk">Як проїхати</a>
-                            </button>
+                              <a class="tehcenter__btn" href="#lytsk">Як проїхати</a>
                           
                         </div>
                       </div>
@@ -365,14 +351,16 @@
                   <label for="city" class="form__label"
                     >Місто <span>*</span></label
                   >
-                  <select id="city" class="form__input form__select" name="city" required>
+                  <div class="form__select-wrapper">
+                  <select id="city" class="form__select" name="city" required>
+                    
                     <option value="" disabled selected>
                       Оберіть місто зі списку
                     </option>
                     <option value="kyiv">Рівне</option>
                     <option value="lviv">Луцьк</option>
                   </select>
-
+</div>
                   <button class="form__btn" id="openModalBtn">
                     Замовити телефонний дзвінок
                   </button>

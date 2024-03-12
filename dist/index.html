@@ -3,20 +3,20 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20240311173155" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240312141938" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240311173155" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&_v=20240312141938" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240311173155" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/css/select2.min.css?_v=20240311173155" integrity="sha512-Yd2IPVn3EeE/JLsqKa60jwIpjP5T4iI5fuTucd3kPfh6b1c6O8Xxv3yxN92o/z5sxCt9obG9Hf2NU5fO6C37lg==" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap&_v=20240312141938" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/css/select2.min.css?_v=20240312141938" integrity="sha512-Yd2IPVn3EeE/JLsqKa60jwIpjP5T4iI5fuTucd3kPfh6b1c6O8Xxv3yxN92o/z5sxCt9obG9Hf2NU5fO6C37lg==" crossorigin="anonymous" />
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240311173155" integrity="sha512-u7io5LcDXVs3dV1/+U2m8ctT+u/eawjN5xHdVCpLuXndO5mISdTyc2Rwmz9NlH2Np5u1cKgCxh9cfOx9um8a1w==" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20240312141938" integrity="sha512-u7io5LcDXVs3dV1/+U2m8ctT+u/eawjN5xHdVCpLuXndO5mISdTyc2Rwmz9NlH2Np5u1cKgCxh9cfOx9um8a1w==" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/js/select2.min.js?_v=20240311173155" integrity="sha512-YXy4xF5EMrs0Mnjb4B6s74YFG+kuZfFNtJ8e8vwGcZyE9TOA6q3ui+HG5As6lGMFGf2rIM4Tl/vaUzqIId6RQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-rc.1/js/select2.min.js?_v=20240312141938" integrity="sha512-YXy4xF5EMrs0Mnjb4B6s74YFG+kuZfFNtJ8e8vwGcZyE9TOA6q3ui+HG5As6lGMFGf2rIM4Tl/vaUzqIId6RQ==" crossorigin="anonymous"></script>
   <title>Restart</title>
 </head>
 
@@ -83,34 +83,46 @@
 
       <section class="main">
         <div class="main__container container">
-
-<div class="wrapper">
-  <div class="image-container">
-    <picture><source srcset="img/bg1.webp" type="image/webp"><img src="img/bg1.jpg" alt="" class="image-before slider-image"></picture>
-    <picture><source srcset="img/bg2.webp" type="image/webp"><img src="img/bg2.webp" alt="" class="image-after slider-image"></picture>
-  </div>
-
-  <input class="slider" type="range" min="0" max="100" value="50">
-<div class="slider-line" aria-hidden="true"></div>
-<div class="slider-button" aria-hidden="true">
-  <div>
-                <div class="main__nav-wrapper">
+          <div class="wrapper">
+      
+            <div class="image-container">
               <img
-                src="img/icons/arr-right.svg"
-                alt="array"
-                class="main__icon"
+                src="img/bg1.jpg"
+                alt=""
+                class="image-before slider-image"
               />
-              <img src="img/icons/line.svg" alt="array" class="main__icon" />
               <img
-                src="img/icons/arr-left.svg"
-                alt="array"
-                class="main__icon"
+                src="img/bg2.webp"
+                alt=""
+                class="image-after slider-image"
               />
             </div>
-          </div>
-</div>
 
-</div>
+            <input class="slider" type="range" min="0" max="100" value="50" />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <div>
+                <div class="main__nav-wrapper">
+                  <img
+                    src="img/icons/arr-right.svg"
+                    alt="array"
+                    class="main__icon"
+                  />
+                  <img
+                    src="img/icons/line.svg"
+                    alt="array"
+                    class="main__icon"
+                  />
+                  <img
+                    src="img/icons/arr-left.svg"
+                    alt="array"
+                    class="main__icon"
+                  />
+                </div>
+              </div>
+            </div>
+            
+          </div>
 
           <div class="main__wrapper">
             <div class="main__block">
@@ -127,11 +139,7 @@
                 </p>
               </div>
               <div class="main__btn-wrapper">
-                
-                  <button class="main__btn">
-                    <a href="./stores.html">Мережа сервісів</a>
-                  </button>
-               
+                <a href="./stores.html" class="main__btn">Мережа сервісів</a>
               </div>
             </div>
 
@@ -149,11 +157,7 @@
                 </p>
               </div>
               <div class="main__btn-wrapper">
-                
-                  <button class="main__btn">
-                    <a href="#">Перейти в магазин</a>
-                  </button>
-               
+                <a href="#" class="main__btn">Перейти в магазин</a>
               </div>
             </div>
           </div>
@@ -270,6 +274,6 @@
   </div>
 </footer>
 
-    <script src="js/app.min.js?_v=20240311173155" defer></script>
+    <script src="js/app.min.js?_v=20240312141938" defer></script>
   </body>
 </html>

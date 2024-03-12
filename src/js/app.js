@@ -20,7 +20,8 @@ menuClose.addEventListener('click', () => {
 menuShadow.addEventListener('click', (event) => {
     if (!menuList.contains(event.target)) {
         menuList.classList.remove('menu__list--open');
-        menuShadow.classList.remove('menu--open');
+      menuShadow.classList.remove('menu--open');
+       document.body.style.overflow = 'auto';
         console.log("close");
     }
 });
